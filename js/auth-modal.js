@@ -46,6 +46,36 @@ window.switchAuthTab = function(tab) {
   }
 };
 
+// ─── LOCAL STORAGE USERS HELPER ───────────────────────────────────────────────
+function getStoredUsers() {
+  try {
+    const users = JSON.parse(localStorage.getItem('mst_users') || '[]');
+    if (users.length === 0) {
+      // Default demo account
+      const demoUser = {
+        name: 'MS Tech Customer',
+        phone: '9876543210',
+        email: 'customer@mstech.com',
+        password: 'password123',
+        address: 'Electronic City, Bengaluru'
+      };
+      localStorage.setItem('mst_users', JSON.stringify([demoUser]));
+      return [demoUser];
+    }
+    return users;
+  } catch {
+    return [];
+  }
+}
+
+function saveStoredUsers(users) {
+  try {
+    localStorage.setItem('mst_users', JSON.stringify(users));
+  } catch (e) {
+    console.warn('Could not save users to localStorage', e);
+  }
+}
+
 // ─── FORGOT PASSWORD ───────────────────────────────────────────────────────────
 window.sendForgotPasswordOtp = async function() {
   const identifier = document.getElementById('fpIdentifier').value.trim();
@@ -56,32 +86,18 @@ window.sendForgotPasswordOtp = async function() {
     errEl.style.display = 'block';
     return;
   }
-  try {
-    const res = await fetch('http://localhost:4000/api/auth/forgot-password/send-otp', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifier })
-    });
-    const data = await res.json();
-    if (!data.success) {
-      errEl.textContent = '⚠️ ' + data.error;
-      errEl.style.display = 'block';
-      return;
-    }
-    document.getElementById('fpStep1').style.display = 'none';
-    document.getElementById('fpStep2').style.display = 'block';
-    const demoBox = document.getElementById('fpDemoOtpBox');
-    if (demoBox) {
-      if (data.demoOtp) {
-        demoBox.innerHTML = `🔧 <strong>Demo Mode:</strong> Your OTP is <strong style="color:#00b4d8;font-size:1.3em;letter-spacing:4px">${data.demoOtp}</strong><br><small style="opacity:0.75">(Set up Fast2SMS or MSG91 API key in .env for real SMS)</small>`;
-        demoBox.style.display = 'block';
-      } else {
-        demoBox.style.display = 'none';
-      }
-    }
-  } catch {
-    errEl.textContent = '⚠️ Could not contact verification server.';
-    errEl.style.display = 'block';
+
+  // Generate demo OTP
+  const demoOtp = '1234';
+  sessionStorage.setItem('mst_fp_otp', demoOtp);
+  sessionStorage.setItem('mst_fp_user', identifier);
+
+  document.getElementById('fpStep1').style.display = 'none';
+  document.getElementById('fpStep2').style.display = 'block';
+  const demoBox = document.getElementById('fpDemoOtpBox');
+  if (demoBox) {
+    demoBox.innerHTML = `🔧 <strong>Verification Code:</strong> Your OTP is <strong style="color:#00b4d8;font-size:1.3em;letter-spacing:4px">${demoOtp}</strong>`;
+    demoBox.style.display = 'block';
   }
 };
 
@@ -107,26 +123,24 @@ window.handleForgotPasswordReset = async function(e) {
     errEl.style.display = 'block';
     return;
   }
-  try {
-    const res = await fetch('http://localhost:4000/api/auth/forgot-password/reset', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifier, otp, newPassword })
-    });
-    const data = await res.json();
-    if (!data.success) {
-      errEl.textContent = '⚠️ ' + data.error;
-      errEl.style.display = 'block';
-      return;
-    }
-    document.getElementById('fpStep2').style.display = 'none';
-    succEl.textContent = '🎉 ' + data.message;
-    succEl.style.display = 'block';
-    setTimeout(() => { window.switchAuthTab('signin'); }, 2500);
-  } catch {
-    errEl.textContent = '⚠️ Failed to reset password. Please check your connection.';
+  if (otp !== '1234' && otp !== sessionStorage.getItem('mst_fp_otp')) {
+    errEl.textContent = '⚠️ Invalid OTP. Please use OTP: 1234';
     errEl.style.display = 'block';
+    return;
   }
+
+  // Update password in local storage
+  const users = getStoredUsers();
+  const user = users.find(u => u.email === identifier || u.phone === identifier);
+  if (user) {
+    user.password = newPassword;
+    saveStoredUsers(users);
+  }
+
+  document.getElementById('fpStep2').style.display = 'none';
+  succEl.textContent = '🎉 Password reset successfully! You can now sign in.';
+  succEl.style.display = 'block';
+  setTimeout(() => { window.switchAuthTab('signin'); }, 2000);
 };
 
 // ─── SIGN IN ───────────────────────────────────────────────────────────────────
@@ -138,24 +152,31 @@ window.handleSignIn = async function(e) {
   errEl.style.display = 'none';
   const btn = e.target.querySelector('button[type=submit]');
   btn.textContent = 'Signing in…'; btn.disabled = true;
-  try {
-    const res = await fetch('http://localhost:4000/api/auth/login', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifier, password })
-    });
-    const data = await res.json();
-    if (!data.success) { errEl.textContent = data.error; errEl.style.display = 'block'; return; }
-    localStorage.setItem('mst_jwt_token', data.token);
-    localStorage.setItem('mst_current_user', JSON.stringify(data.user));
+
+  setTimeout(() => {
+    const users = getStoredUsers();
+    const user = users.find(u => (u.email === identifier || u.phone === identifier) && u.password === password);
+
+    if (!user) {
+      errEl.textContent = '⚠️ Invalid email/phone or password.';
+      errEl.style.display = 'block';
+      btn.textContent = 'Sign In →';
+      btn.disabled = false;
+      return;
+    }
+
+    const token = 'mock_mst_token_' + Date.now();
+    const safeUser = { name: user.name, phone: user.phone, email: user.email, address: user.address };
+    localStorage.setItem('mst_jwt_token', token);
+    localStorage.setItem('mst_current_user', JSON.stringify(safeUser));
+
     const modal = document.getElementById('authModal');
     if (modal) modal.style.display = 'none';
     updateAuthNav();
-    if (data.redirectAdmin) { window.location.href = 'admin.html'; }
-    else { showToast('✅ Welcome back, ' + data.user.name + '!'); }
-  } catch {
-    errEl.textContent = '⚠️ Could not connect to server. Make sure backend is running (npm run server).';
-    errEl.style.display = 'block';
-  } finally { btn.textContent = 'Sign In →'; btn.disabled = false; }
+    showToast('✅ Welcome back, ' + user.name + '!');
+    btn.textContent = 'Sign In →';
+    btn.disabled = false;
+  }, 400);
 };
 
 // ─── SIGN UP ───────────────────────────────────────────────────────────────────
@@ -170,23 +191,34 @@ window.handleSignUp = async function(e) {
   errEl.style.display = 'none';
   const btn = e.target.querySelector('button[type=submit]');
   btn.textContent = 'Creating…'; btn.disabled = true;
-  try {
-    const res = await fetch('http://localhost:4000/api/auth/signup', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, phone, email, password, address })
-    });
-    const data = await res.json();
-    if (!data.success) { errEl.textContent = data.error; errEl.style.display = 'block'; return; }
-    localStorage.setItem('mst_jwt_token', data.token);
-    localStorage.setItem('mst_current_user', JSON.stringify(data.user));
+
+  setTimeout(() => {
+    const users = getStoredUsers();
+    const exists = users.find(u => (phone && u.phone === phone) || (email && u.email === email));
+    if (exists) {
+      errEl.textContent = '⚠️ An account with this phone or email already exists.';
+      errEl.style.display = 'block';
+      btn.textContent = 'Create Account →';
+      btn.disabled = false;
+      return;
+    }
+
+    const newUser = { name, phone, email, password, address, createdAt: new Date().toISOString() };
+    users.push(newUser);
+    saveStoredUsers(users);
+
+    const token = 'mock_mst_token_' + Date.now();
+    const safeUser = { name, phone, email, address };
+    localStorage.setItem('mst_jwt_token', token);
+    localStorage.setItem('mst_current_user', JSON.stringify(safeUser));
+
     const modal = document.getElementById('authModal');
     if (modal) modal.style.display = 'none';
     updateAuthNav();
-    showToast('🎉 Account created! Welcome, ' + data.user.name + '!');
-  } catch {
-    errEl.textContent = '⚠️ Server not reachable. Run: npm run server';
-    errEl.style.display = 'block';
-  } finally { btn.textContent = 'Create Account →'; btn.disabled = false; }
+    showToast('🎉 Account created! Welcome, ' + name + '!');
+    btn.textContent = 'Create Account →';
+    btn.disabled = false;
+  }, 400);
 };
 
 // ─── NAV AUTH STATE ────────────────────────────────────────────────────────────

@@ -1,10 +1,8 @@
 /**
  * upi-payment.js
- * UPI payment integration module.
- * Handles payment initiation and order confirmation via the backend.
+ * UPI payment integration module (Client-side static mode).
+ * Handles payment dialog and deep-linking directly in the browser.
  */
-
-const API_BASE = 'http://localhost:4000/api';
 
 /**
  * Initiates a UPI payment request.
@@ -26,24 +24,14 @@ export async function initiateUpiPayment({ amount, description, onSuccess, onErr
       return;
     }
 
-    const res = await fetch(`${API_BASE}/payments/upi/initiate`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-      body: JSON.stringify({ amount, description })
-    });
-
-    const data = await res.json();
-    if (data.success) {
-      if (typeof onSuccess === 'function') onSuccess(data);
-    } else {
-      if (typeof onError === 'function') onError(data.error || 'Payment failed');
+    const orderId = 'MST-' + Date.now();
+    showUpiDialog({ amount, orderId, description });
+    if (typeof onSuccess === 'function') {
+      onSuccess({ success: true, orderId, message: 'UPI payment dialog opened' });
     }
   } catch (err) {
     console.error('[UPI Payment] Error:', err);
-    if (typeof onError === 'function') onError('Could not reach payment server.');
+    if (typeof onError === 'function') onError('Could not initiate payment.');
   }
 }
 

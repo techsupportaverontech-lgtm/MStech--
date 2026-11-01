@@ -1,0 +1,92 @@
+{
+  "rentals": [
+    {
+      "id": 1,
+      "name": "Lenovo ThinkPad T480 Intel Core i5",
+      "available": true,
+      "img_url": "assets/uploads/rental_1784982022914_IMG_20240729_212447.jpg",
+      "specs": "16GB RAM, 512GB NVMe SSD, Intel Core i5 8th Gen, 14\" FHD IPS Display, Backlit Keyboard",
+      "price_per_day": 350,
+      "price_per_week": 1800,
+      "price_per_month": 4500,
+      "condition_label": "Excellent"
+    },
+    {
+      "id": 2,
+      "name": "Dell Latitude 7490 Business Laptop",
+      "available": true,
+      "img_url": "assets/uploads/rental_1785393664348_IMG_20240729_212447.jpg",
+      "specs": "16GB RAM, 512GB SSD, Intel Core i7 8th Gen, 14\" Full HD, Lightweight Magnesium Body",
+      "price_per_day": 400,
+      "price_per_week": 2100,
+      "price_per_month": 5200,
+      "condition_label": "Excellent"
+    },
+    {
+      "id": 3,
+      "name": "HP EliteBook 840 G6 Professional",
+      "available": true,
+      "img_url": "assets/uploads/rental_1784981594455_portfolio_pic.jpg",
+      "specs": "16GB DDR4, 256GB NVMe SSD, Intel Core i5 8th Gen, Bang & Olufsen Audio, Slim Aluminium",
+      "price_per_day": 380,
+      "price_per_week": 1950,
+      "price_per_month": 4800,
+      "condition_label": "Excellent"
+    },
+    {
+      "id": 4,
+      "name": "Lenovo ThinkPad X1 Carbon Ultrabook",
+      "available": true,
+      "img_url": "assets/uploads/rental_1784982022914_IMG_20240729_212447.jpg",
+      "specs": "16GB LPDDR3, 512GB SSD, Intel Core i7 10th Gen, 1.09kg Ultra-light Carbon Fiber, WQHD",
+      "price_per_day": 550,
+      "price_per_week": 2900,
+      "price_per_month": 7500,
+      "condition_label": "Excellent"
+    },
+    {
+      "id": 5,
+      "name": "Dell Precision 3551 Workstation",
+      "available": true,
+      "img_url": "assets/uploads/rental_1785393664348_IMG_20240729_212447.jpg",
+      "specs": "32GB RAM, 1TB NVMe SSD, Intel Core i7 10th Gen, Nvidia Quadro P620 4GB GPU, 15.6\" FHD",
+      "price_per_day": 700,
+      "price_per_week": 3800,
+      "price_per_month": 9800,
+      "condition_label": "Excellent"
+    },
+    {
+      "id": 6,
+      "name": "Apple MacBook Pro 13-inch Retina",
+      "available": true,
+      "img_url": "assets/uploads/rental_1784981594455_portfolio_pic.jpg",
+      "specs": "16GB RAM, 512GB SSD, Intel Core i5, Retina True Tone Display, Touch Bar & Touch ID",
+      "price_per_day": 650,
+      "price_per_week": 3400,
+      "price_per_month": 8900,
+      "condition_label": "Excellent"
+    },
+    {
+      "id": 7,
+      "name": "HP ProBook 440 G8 Quad-Core",
+      "available": true,
+      "img_url": "assets/uploads/rental_1784982022914_IMG_20240729_212447.jpg",
+      "specs": "16GB DDR4, 512GB NVMe SSD, Intel Core i5 11th Gen, Iris Xe Graphics, Fast Charging",
+      "price_per_day": 450,
+      "price_per_week": 2300,
+      "price_per_month": 5800,
+      "condition_label": "Good"
+    },
+    {
+      "id": 8,
+      "name": "Asus TUF Gaming F15 Dedicated GPU",
+      "available": false,
+      "img_url": "assets/uploads/rental_1785393664348_IMG_20240729_212447.jpg",
+      "specs": "16GB DDR4, 512GB SSD, Intel Core i5 11th Gen, Nvidia RTX 3050 4GB, 144Hz IPS Screen",
+      "price_per_day": 600,
+      "price_per_week": 3200,
+      "price_per_month": 8200,
+      "condition_label": "Excellent"
+    }
+  ]
+}

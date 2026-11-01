@@ -1,5 +1,5 @@
 // ═══ Laptop Rentals — Frontend JS ═══
-const RENTALS_API = 'http://localhost:4000/api/rentals';
+const RENTALS_API = './data/rentals.json';
 let _currentRentalId = null;
 let _currentRentalName = '';
 
@@ -18,7 +18,7 @@ function rentalConditionBadge(label) {
 function buildRentalCard(r) {
   const avail = r.available;
   const resolvedImgUrl = r.img_url
-    ? (r.img_url.startsWith('/') ? 'http://localhost:4000' + r.img_url : r.img_url)
+    ? (r.img_url.startsWith('http') || r.img_url.startsWith('assets') || r.img_url.startsWith('./') ? r.img_url : r.img_url.replace(/^\//, ''))
     : '';
 
   // Extract brand from name
@@ -348,17 +348,19 @@ async function submitRentalEnquiry() {
       </div>`;
   }
 
-  // Fire & forget backend
-  fetch('http://localhost:4000/api/orders/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  }).catch(() => {});
+  // Save enquiry to localStorage (static mode)
+  try {
+    const existing = JSON.parse(localStorage.getItem('mst_rental_enquiries') || '[]');
+    existing.push({ ...payload, timestamp: new Date().toISOString() });
+    localStorage.setItem('mst_rental_enquiries', JSON.stringify(existing));
+  } catch (err) {
+    console.warn('Could not save enquiry to localStorage', err);
+  }
 }
 
-// ── Auto-load and start polling every 3 seconds for instant updates
+// ── Auto-load rentals statically
 loadRentals();
-setInterval(loadRentals, 3000);
+setInterval(loadRentals, 60000);
 
 // Expose functions to window object for inline HTML event handlers
 window.openRentalEnquiry = openRentalEnquiry;
