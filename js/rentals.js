@@ -1,4 +1,5 @@
 // ═══ Laptop Rentals — Frontend JS ═══
+import defaultRentalsData from '../data/rentals.json';
 const RENTALS_API = './data/rentals.json';
 let _currentRentalId = null;
 let _currentRentalName = '';
@@ -129,19 +130,27 @@ function buildRentalCard(r) {
 
 let _lastRentalsJson = '';
 
-// ── Load rentals from API
+// ── Load rentals (Bundled with fetch fallback)
 async function loadRentals() {
   const grid = document.getElementById('rentalsGrid');
   const loadMsg = document.getElementById('rentalsLoadingMsg');
   const empty = document.getElementById('rentalsEmptyState');
   if (!grid) return;
 
+  let rentals = defaultRentalsData.rentals || [];
   try {
     const res = await fetch(RENTALS_API);
-    if (!res.ok) throw new Error('API error');
-    const data = await res.json();
-    const rentals = data.rentals || [];
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.rentals) && data.rentals.length) {
+        rentals = data.rentals;
+      }
+    }
+  } catch (e) {
+    // Fallback to bundled rentals
+  }
 
+  try {
     // Compare with last loaded data to prevent screen flicker/re-animations if nothing changed
     const currentJson = JSON.stringify(rentals);
     if (currentJson === _lastRentalsJson) {

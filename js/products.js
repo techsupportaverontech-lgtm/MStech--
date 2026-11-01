@@ -1,3 +1,5 @@
+import productsData from '../data/products.json';
+
 const categoryImages = {
   cpu: '',
   gpu: '',
@@ -14,13 +16,23 @@ const categoryImages = {
 };
 
 export async function loadProducts() {
-  const response = await fetch('./data/products.json');
-  if (!response.ok) throw new Error(`Unable to load products: ${response.status}`);
-  const products = await response.json();
-  Object.entries(products).forEach(([category, items]) => {
-    items.forEach(item => {
-      item.image = categoryImages[category] || item.image;
-    });
+  let products = productsData;
+  try {
+    const response = await fetch('./data/products.json');
+    if (response.ok) {
+      products = await response.json();
+    }
+  } catch (err) {
+    console.warn('[Products] Fetch failed, using bundled data.', err);
+  }
+
+  const processed = JSON.parse(JSON.stringify(products));
+  Object.entries(processed).forEach(([category, items]) => {
+    if (Array.isArray(items)) {
+      items.forEach(item => {
+        item.image = categoryImages[category] || item.image;
+      });
+    }
   });
-  return products;
+  return processed;
 }

@@ -1,8 +1,34 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import fs from 'fs';
+
+// Custom plugin to ensure static directories (data/ and assets/) are copied to dist/
+function copyStaticDirs() {
+  return {
+    name: 'copy-static-dirs',
+    closeBundle() {
+      const outDir = resolve(__dirname, 'dist');
+      
+      // Copy data/ directory
+      const dataSrc = resolve(__dirname, 'data');
+      const dataDest = resolve(outDir, 'data');
+      if (fs.existsSync(dataSrc)) {
+        fs.cpSync(dataSrc, dataDest, { recursive: true });
+      }
+
+      // Copy assets/ directory (preserves products/, uploads/, logos, etc.)
+      const assetsSrc = resolve(__dirname, 'assets');
+      const assetsDest = resolve(outDir, 'assets');
+      if (fs.existsSync(assetsSrc)) {
+        fs.cpSync(assetsSrc, assetsDest, { recursive: true });
+      }
+    }
+  };
+}
 
 export default defineConfig({
   base: './',
+  plugins: [copyStaticDirs()],
   build: {
     rollupOptions: {
       checks: {
