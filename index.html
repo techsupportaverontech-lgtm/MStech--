@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS Technologies | Premier Computer Repair, Custom PCs & IT hardware</title>
+  <meta name="description" content="MS Technologies - Bengaluru's leading laptop repair shop, custom gaming PC builders, and IT hardware retail store in Electronic City. Professional diagnostics, upgrade solutions, and CCTV setups.">
+  <meta name="keywords" content="laptop repair Bangalore, computer service Electronic City, custom gaming PC, RTX graphics cards, SSD upgrade, Hikvision CCTV installation, RAM upgrade, MS Technologies Bangalore">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="icon" type="image/png" href="assets/logo_small.png">
+  <link rel="apple-touch-icon" href="assets/logo_nav.png">
+  <script>if(sessionStorage.getItem('mst_visited') || sessionStorage.getItem('mst_nav_click') || window.location.hash){document.documentElement.classList.add('no-splash');}</script>
+  <!-- UPI QR uses qrserver.com image API — no SDK needed -->
+  <!-- Preload critical images for instant display -->
+  <link rel="preload" as="image" href="assets/logo_nav.png">
+  <link rel="preload" as="image" href="assets/led_monitor.jpg">
+  <link rel="preload" as="image" href="assets/gaming_graphics_card.jpg">
+  <link rel="preload" as="image" href="assets/ddr4_ram_modules.jpg">
+  <link rel="preload" as="image" href="assets/internal_ssd_drive.jpg">
+</head>
+<body>
+  <!-- ═══ Splash / Preloader Screen ═══ -->
+  <div id="splash-screen" aria-hidden="true">
+    <div class="splash-logo-wrap">
+      <div class="splash-ring"></div>
+      <div class="splash-ring-2"></div>
+      <img src="assets/logo_nav.png" alt="MS Technologies Logo" class="splash-logo-img" width="80" height="80">
+    </div>
+    <p class="splash-brand">MS <span>Technologies</span></p>
+    <div class="splash-progress-track">
+      <div class="splash-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="assets/logo_nav.png" alt="MS Technologies" class="nav-logo-img" width="40" height="40" loading="eager">
+        <span class="logo-text">MS Technologies</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="products.html">Products</a>
+
+        <a href="#reviews">Reviews</a>
+        <a href="#popular-times">Popular Times</a>
+        <a href="#booking">Book A Repair</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  
+
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="particles-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="badge-hero animate-fade-in-up" style="display:inline-flex; align-items:center; gap:8px; background:rgba(0,180,216,0.1); border:1px solid rgba(0,180,216,0.3); padding:6px 16px; border-radius:100px; font-size:0.85rem; font-weight:600; color:var(--primary-light); margin-bottom:var(--space-md);">
+        <span>★ 4.9 Rating (199 Google Reviews)</span>
+      </div>
+      <h1 class="animate-fade-in-up delay-1">Bengaluru's Premier <span class="text-gradient">Computer Repair & Custom PC Hub</span></h1>
+      <p class="animate-fade-in-up delay-2">Expert laptop repairs, screen replacements, gaming workstation customization, SSD upgrades, and smart CCTV installations in Electronic City.</p>
+      <div class="hero-buttons animate-fade-in-up delay-3">
+        <a href="#booking" class="btn btn-primary">Book A Service</a>
+      </div>
+      <a href="#services" class="scroll-indicator animate-fade-in-up delay-4" aria-label="Scroll down to services">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section-alt" id="services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title animate-on-scroll">Premium Tech Support <span class="text-gradient">& Services</span></h2>
+        <p class="section-subtitle animate-on-scroll delay-1">We maintain, upgrade, and repair your hardware devices to operate at full throttle. No job is too complex for our hardware engineers.</p>
+      </div>
+      <div class="grid-3">
+        <!-- Card 1 -->
+        <div class="glass-card animate-on-scroll delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="2" y1="20" x2="22" y2="20"/>
+              <line x1="12" y1="17" x2="12" y2="20"/>
+            </svg>
+          </div>
+          <h3>Laptop & Desktop Repair</h3>
+          <p>Professional replacement of broken screens/panels, keyboards, hinges, and faulty batteries. Diagnostic & troubleshooting to resolve heating, power, or slow processing.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="glass-card animate-on-scroll delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3>Custom Gaming PC Builds</h3>
+          <p>Get custom configurations built from scratch. Install powerful graphics cards, multi-core processors, liquid cooling systems, and premium cabinets with syncable RGB lights.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="glass-card animate-on-scroll delay-3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3>SSD, HDD & RAM Upgrades</h3>
+          <p>Accelerate boot and loading speeds by replacing legacy hard drives with high-speed SSDs (SATA, NVMe) and boosting system RAM (DDR3, DDR4, DDR5).</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="glass-card animate-on-scroll delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="10" r="3"/>
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+            </svg>
+          </div>
+          <h3>Hikvision CCTV & Networking</h3>
+          <p>Establish complete security layouts. Wired and wireless high-definition IP camera setups, DVR & NVR configurations, and router installations for homes and commercial locations.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="glass-card animate-on-scroll delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>OS Installation & Antivirus</h3>
+          <p>Clean installs of Windows/Linux OS, thorough virus/malware scanning, software troubleshooting, license recovery, and setup of premium security suites.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="glass-card animate-on-scroll delay-3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M10 4v4M14 4v4M2 8h20"/>
+            </svg>
+          </div>
+          <h3>SMPS & Component Repair</h3>
+          <p>Component-level diagnosis on power supplies (SMPS), motherboard circuits, speaker integrations, and external hardware peripherals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <section class="section-alt" id="reviews">
+    <div class="container">
+      <div class="text-center">
+        <div class="google-badge-pill animate-on-scroll">
+          <svg class="google-g-icon" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Google Business Rating <strong>4.9 ★★★★★</strong></span>
+        </div>
+        <h2 class="section-title animate-on-scroll">What Our Clients <span class="text-gradient">Say About Us</span></h2>
+        <p class="section-subtitle animate-on-scroll delay-1">Rated 4.9/5 stars based on 199+ real Google Business reviews from Bengaluru customers.</p>
+        
+        <div class="reviews-actions animate-on-scroll delay-2" style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; align-items: center;">
+          <a href="https://share.google/CKsoeFV3gDCvJpDkK" target="_blank" rel="noopener noreferrer" class="btn btn-primary google-review-btn">
+            <svg class="google-g-icon" viewBox="0 0 24 24" width="18" height="18" style="margin-right: 8px; vertical-align: middle;">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            Write a Review on Google
+          </a>
+        </div>
+      </div>
+
+      <!-- Slider Container with Right-to-Left Auto Slide -->
+      <div class="reviews-slider-outer" style="margin-top: 2.5rem; position: relative; overflow: hidden;">
+        <button class="slider-nav-btn prev-btn" id="reviews-prev-btn" aria-label="Previous Reviews">‹</button>
+        <button class="slider-nav-btn next-btn" id="reviews-next-btn" aria-label="Next Reviews">›</button>
+
+        <div class="reviews-slider-wrapper" id="reviews-slider-wrapper">
+          <div class="reviews-slider-track" id="reviews-slider-track">
+            <!-- Dynamic Review Cards appended by js/reviews.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proven Success in Numbers Section -->
+  <section class="section" id="proven-success">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title animate-on-scroll">Proven Success <span class="text-gradient">in Numbers</span></h2>
+      </div>
+      <div class="grid-4" style="margin-top: 3rem;">
+        <!-- Card 1 -->
+        <div class="glass-card stat-card animate-on-scroll delay-1">
+          <div class="stat-card-number">7+</div>
+          <div class="stat-card-label">Products Offered</div>
+        </div>
+        <!-- Card 2 -->
+        <div class="glass-card stat-card animate-on-scroll delay-2">
+          <div class="stat-card-number">254+</div>
+          <div class="stat-card-label">Services Offered</div>
+        </div>
+        <!-- Card 3 -->
+        <div class="glass-card stat-card animate-on-scroll delay-3">
+          <div class="stat-card-number">4.90★</div>
+          <div class="stat-card-label">196 Customer Reviews</div>
+        </div>
+        <!-- Card 4 -->
+        <div class="glass-card stat-card animate-on-scroll delay-4">
+          <div class="stat-card-number">6000+</div>
+          <div class="stat-card-label">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Times Section -->
+  <section class="section" id="popular-times">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title animate-on-scroll">Popular Visit <span class="text-gradient">Times</span></h2>
+        <p class="section-subtitle animate-on-scroll delay-1">Avoid peak hours by checking our typical weekly customer traffic chart. Wednesdays can get busy in the evening!</p>
+      </div>
+      <div class="glass-card popular-times-card animate-on-scroll">
+        <div class="popular-times-header">
+          <h3 style="font-size:1.2rem; margin:0;">Wednesday Peak Times</h3>
+          <div class="popular-times-badge">
+            <span></span> Live Status Check
+          </div>
+        </div>
+        <div class="popular-times-chart-container" id="popularTimesChart">
+          <!-- Rendered dynamically by main.js -->
+        </div>
+        <div class="popular-times-axis-labels">
+          <span>9a</span>
+          <span>12p</span>
+          <span>3p</span>
+          <span>6p</span>
+          <span>9p</span>
+        </div>
+        <p style="font-size:0.9rem; color:#475569; text-align:center; margin-top:var(--space-md);">Tip: Visiting between 10:00 AM and 3:00 PM usually provides the shortest waiting times for diagnostic services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Us Online Section -->
+  <section id="booking" class="booking-section section-alt">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title animate-on-scroll">Schedule A Service <span class="text-gradient">Online</span></h2>
+        <p class="section-subtitle animate-on-scroll delay-1">Pre-book your laptop diagnosis or parts repair. Safe instant OTP verification simulated for premium flow.</p>
+      </div>
+
+      <div class="glass-card booking-card animate-on-scroll" style="max-width: 650px; margin: 0 auto;">
+        <form id="onlineBookingForm">
+          <div class="form-group">
+            <label for="bookingName">Full Name</label>
+            <input type="text" id="bookingName" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          
+          <div class="form-group phone-verification-group">
+            <label for="bookingPhone">Phone Number</label>
+            <div style="display: flex; gap: var(--space-sm);">
+              <input type="tel" id="bookingPhone" class="form-control" placeholder="Enter 10-digit mobile number" required>
+            </div>
+            
+            <!-- OTP Input (Simulated) -->
+            
+          
+          <div class="form-group">
+            <label for="bookingService">Select Hardware Service / Upgrade</label>
+            <select id="bookingService" class="form-control" required>
+              <option value="" disabled selected>Choose a service category...</option>
+              <option value="Laptop Screen Replacement">Laptop Screen Replacement (Panel)</option>
+              <option value="Custom PC Setup">Custom Gaming PC Assembly</option>
+              <option value="SSD Speed Upgrade">SSD Drive Integration & OS Cloning</option>
+              <option value="RAM Upgrade">RAM Expansion (DDR3 / DDR4)</option>
+              <option value="Battery or Keyboard Service">Battery or Keyboard Replacement</option>
+              <option value="CCTV Security Setup">Hikvision CCTV & NVR Configuration</option>
+              <option value="General Troubleshooting">General Computer Troubleshooting</option>
+              <option value="Rent a Laptop">Rent a Laptop</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingAddress">Service Location / Address *</label>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <textarea id="bookingAddress" class="form-control" rows="2" placeholder="Enter your full service address (House/Flat No, Street, Landmark, Area, Electronic City, Bengaluru)" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingProblem">Describe Your Repair Requirement</label>
+            <textarea id="bookingProblem" class="form-control" placeholder="Describe the symptoms of your machine (e.g. laptop display flickers, blue screen errors, custom build layout request)" required></textarea>
+          </div>
+
+          <button type="submit" id="bookingSubmitBtn" class="btn btn-primary w-100" style="width:100%; justify-content:center;">Submit Service Request</button>
+          
+
+
+          <p id="bookingMessage" style="margin-top:var(--space-md); font-size:0.95rem; text-align:center; display:none;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find Us & Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title animate-on-scroll">Contact & <span class="text-gradient">Location</span></h2>
+        <p class="section-subtitle animate-on-scroll delay-1">Visit our center in Electronic City or reach us via phone/WhatsApp.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Business Details -->
+        <div class="business-info-card glass-card animate-on-scroll">
+          <h3 style="font-size:1.4rem; color:var(--white); border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:var(--space-sm);">MS Technologies</h3>
+          
+          <div class="info-row">
+            <div class="info-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="info-content-box">
+              <h4>Phone Support</h4>
+              <p><a href="tel:+918880014003" style="font-size:1.1rem; font-weight:700; color:var(--primary);">+91 88800 14003</a></p>
+              <p>Call or text anytime during business hours.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="info-content-box">
+              <h4>Address Location</h4>
+              <p style="color:var(--text-light); line-height:1.5;">NO 730 SA Building 1st Floor, New Mico Rd, Chennakeshava Nagar, Hosa Road, Electronic City, Bengaluru, Karnataka 560100</p>
+              <a href="https://maps.app.goo.gl/K5Xpuf759NfFVNYaA" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; color:var(--primary); font-weight:600; font-size:0.88rem; margin-top:6px; text-decoration:none;">
+                <span>📍</span> Get Directions / Navigate &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div class="info-content-box" style="width:100%;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h4 style="margin:0;">Business Hours</h4>
+                <span id="openStatusBadge" style="font-size:0.8rem; font-weight:700; padding:3px 8px; border-radius:4px;"></span>
+              </div>
+              <table class="business-hours-table">
+                <tr data-day="1"><td class="day-col">Monday</td><td class="time-col">9:00 AM – 9:00 PM</td></tr>
+                <tr data-day="2"><td class="day-col">Tuesday</td><td class="time-col">9:00 AM – 9:00 PM</td></tr>
+                <tr data-day="3"><td class="day-col">Wednesday</td><td class="time-col">9:00 AM – 9:00 PM</td></tr>
+                <tr data-day="4"><td class="day-col">Thursday</td><td class="time-col">9:00 AM – 9:00 PM</td></tr>
+                <tr data-day="5"><td class="day-col">Friday</td><td class="time-col">9:00 AM – 9:00 PM</td></tr>
+                <tr data-day="6"><td class="day-col">Saturday</td><td class="time-col">9:00 AM – 9:00 PM</td></tr>
+                <tr data-day="0"><td class="day-col">Sunday</td><td class="time-col" style="color:#fd6262;">Closed</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maps Box -->
+        <div class="map-card animate-on-scroll">
+          <!-- Light Mode Google Maps Embed -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.141505680193!2d77.6549447!3d12.8701789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d0e107b0e27%3A0xcac360addddad8ed!2sMS%20Technologies!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="MS Technologies Location Map">
+          </iframe>
+          <a href="https://maps.app.goo.gl/K5Xpuf759NfFVNYaA" target="_blank" rel="noopener noreferrer" class="map-directions-btn" title="Navigate to MS Technologies in Google Maps">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Navigate in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER — Edify Black ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Address -->
+        <div class="footer-brand">
+          <div class="logo-text">MS Technologies</div>
+          <p>India's most trusted certified refurbished laptop &amp; custom PC marketplace. 50,000+ happy customers.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/mstechnologiees?igsh=YzNseDY3Zzl3bDVq" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1DhC73VV81/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+          <div class="footer-badges-row">
+            <span class="footer-badge-pill">✅ CPCB Certified</span>
+            <span class="footer-badge-pill">🌿 LiFE</span>
+            <span class="footer-badge-pill">🇮🇳 Make in India</span>
+          </div>
+          <div class="address-text">
+            NO 730 SA Building 1st Floor, New Mico Rd,<br>
+            Chennakeshava Nagar, Hosa Road, Electronic City,<br>
+            Bengaluru, Karnataka – 560100, India
+          </div>
+          <p style="font-size:0.75rem;color:#475569;margin-top:2px;">MS Technologies Private Limited</p>
+        </div>
+
+        <!-- Column 2: Shop -->
+        <div class="footer-links">
+          <h4>S H O P</h4>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-links">
+          <h4>S U P P O R T</h4>
+          <div class="footer-support-item">
+            <strong>Email</strong>
+            <a href="mailto:MSTechnologiees@gmail.com" style="color:#94a3b8;text-decoration:none;">MSTechnologiees@gmail.com</a>
+          </div>
+          <div class="footer-support-item">
+            <strong>For Sales &amp; Service</strong>
+            <a href="tel:+918880014003" style="color:#94a3b8;text-decoration:none;">+91 88800 14003</a>
+          </div>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="footer-links">
+          <h4>C O M P A N Y</h4>
+          <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a>
+          <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="about.html" target="_blank" rel="noopener">About Us</a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-built-by">
+          <span>Built by</span>
+          <a href="https://techsupportaverontech-lgtm.github.io/Averon-portfolio/" target="_blank" rel="noopener" title="Averon Tech">
+            <img src="assets/averon_tech_logo.jpg" alt="Averon Tech" class="footer-built-by-logo">
+          </a>
+        </div>
+        <p class="footer-bottom-copyright">&copy; 2026 MS Technologies Private Limited. All rights reserved.</p>
+        <div class="footer-bottom-spacer" aria-hidden="true"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/918880014003" target="_blank" rel="noopener" class="floating-wa-btn" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.613.613l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.344 0-4.507-.803-6.22-2.147l-.364-.299-3.768 1.263 1.263-3.768-.299-.364A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+
+  <!-- ═══ PRODUCT DETAIL MODAL ═══ -->
+  <div id="productModal" class="overlay-backdrop" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+    <div class="product-modal-card glass-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close">&times;</button>
+      <div class="product-modal-img-wrap">
+        <img id="modalProductImg" src="" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px 12px 0 0;">
+        <div id="modalProductImgIcon" style="display:none;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--primary);"></div>
+      </div>
+      <div class="product-modal-body">
+        <span id="modalProductTag" class="product-card-tag" style="position:static;margin-bottom:10px;display:inline-block;"></span>
+        <h2 id="modalProductName" style="font-size:1.4rem;margin-bottom:8px;"></h2>
+        <p id="modalProductDesc" style="color:var(--text-muted);margin-bottom:12px;line-height:1.6;"></p>
+        <div id="modalProductPrice" class="product-card-price" style="font-size:1.3rem;margin-bottom:var(--space-md);"></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="btn btn-primary" id="modalAddToCartBtn" style="flex:1;justify-content:center;gap:8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Add to Cart
+          </button>
+          <button class="btn btn-secondary" id="modalBookServiceBtn" style="flex:1;justify-content:center;">
+            Book Service Instead
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CART DRAWER ═══ -->
+  <div id="cartDrawerBackdrop" class="overlay-backdrop" style="display:none;"></div>
+  <div id="cartDrawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <h3>🛒 Your Cart</h3>
+      <button class="modal-close-btn" id="cartCloseBtn" style="position:static;" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="cartItemsList" class="cart-items-list"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotalAmount" class="cart-total-value">₹0</span>
+      </div>
+      <button class="btn btn-primary" id="cartCheckoutBtn" onclick="window.openOrderCheckout()" style="width:100%;justify-content:center;margin-top:12px;" disabled>
+        Proceed to Checkout
+      </button>
+      <button class="btn btn-secondary" id="cartClearBtn" style="width:100%;justify-content:center;margin-top:8px;font-size:0.85rem;opacity:0.7;">
+        Clear Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══ UPI CHECKOUT OVERLAY ═══ -->
+  <div id="upiCheckoutOverlay" class="overlay-backdrop" style="display:none;" role="dialog" aria-modal="true" aria-label="Place Order">
+    <div class="upi-checkout-card glass-card">
+      <button class="modal-close-btn" id="upiCloseBtn" aria-label="Close">&times;</button>
+      
+      <!-- Step 1: Customer Details with Phone Verification -->
+      <div id="upiStep1">
+        <h3 class="text-gradient" style="text-align:center;margin-bottom:4px;">Place Your Order</h3>
+        <p style="text-align:center;color:var(--text-muted);font-size:0.9rem;margin-bottom:var(--space-md);">Verify your phone number to confirm the order.</p>
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" id="upiCustName" class="form-control" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <div style="display:flex;gap:8px;">
+            <input type="tel" id="upiCustPhone" class="form-control" placeholder="10-digit mobile number" style="flex:1;">
+            <button type="button" id="checkoutSendOtpBtn" class="btn btn-secondary" style="padding:10px 16px;font-size:0.85rem;flex-shrink:0;">Verify Phone</button>
+          </div>
+        </div>
+        <div id="checkoutOtpWrapper" style="display:none;margin-bottom:var(--space-md);">
+          <label style="font-size:0.85rem;color:var(--primary-light);">Enter 4-Digit OTP (Use 1234)</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <input type="text" id="checkoutOtpInput" class="form-control" placeholder="••••" maxlength="4" style="letter-spacing:8px;text-align:center;font-size:1.2rem;max-width:120px;">
+            <button type="button" id="checkoutVerifyOtpBtn" class="btn btn-primary" style="padding:10px 16px;font-size:0.85rem;">Verify</button>
+          </div>
+        </div>
+        <div id="checkoutVerifiedBadge" style="display:none;margin-bottom:var(--space-md);color:var(--success);font-weight:600;font-size:0.9rem;">✓ Phone Verified Successfully</div>
+        <div id="upiStep1Error" style="color:#fd6262;font-size:0.85rem;display:none;margin-bottom:8px;"></div>
+        <button class="btn btn-primary" id="upiProceedToQRBtn" style="width:100%;justify-content:center;">
+          ✓ Confirm Order →
+        </button>
+      </div>
+
+      <!-- Step 2: Hidden (kept for DOM compat) -->
+      <div id="upiStep2" style="display:none;"></div>
+
+      <!-- Step 3: Processing -->
+      <div id="upiStep3" style="display:none;text-align:center;padding:var(--space-xl) 0;">
+        <div class="upi-processing-spinner"></div>
+        <h3 style="margin-top:var(--space-md);">Submitting Your Order...</h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;">Your order is being sent to MS Technologies.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ RECEIPT OVERLAY ═══ -->
+  <div id="receiptOverlay" class="overlay-backdrop" style="display:none;" role="dialog" aria-modal="true" aria-label="Order Receipt">
+    <div class="receipt-card" id="receiptCard">
+      <div class="receipt-header">
+        <div class="receipt-logo">MS</div>
+        <div>
+          <h2 style="margin:0;font-size:1.3rem;">MS Technologies</h2>
+          <p style="margin:0;font-size:0.8rem;color:var(--text-muted);">Electronic City, Bengaluru</p>
+        </div>
+        <div class="receipt-paid-badge" style="background:rgba(0,180,216,0.15);border-color:rgba(0,180,216,0.4);color:var(--primary);">✓ REQUEST RECEIVED</div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,0.08);margin:var(--space-md) 0;">
+      <div class="receipt-meta">
+        <div><span class="receipt-label">Order ID</span><span id="rcptOrderId" class="receipt-value"></span></div>
+        <div><span class="receipt-label">Date &amp; Time</span><span id="rcptDateTime" class="receipt-value"></span></div>
+        <div><span class="receipt-label">Customer</span><span id="rcptName" class="receipt-value"></span></div>
+        <div><span class="receipt-label">Email</span><span id="rcptEmail" class="receipt-value"></span></div>
+        <div><span class="receipt-label">Phone</span><span id="rcptPhone" class="receipt-value"></span></div>
+        <div><span class="receipt-label">Payment Method</span><span id="rcptUTR" class="receipt-value" style="font-weight:700;color:var(--primary);">Offline CoD Coordination</span></div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,0.08);margin:var(--space-md) 0;">
+      <table class="receipt-items-table">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Item</th>
+            <th style="text-align:center;">Qty</th>
+            <th style="text-align:right;">Price</th>
+          </tr>
+        </thead>
+        <tbody id="rcptItemsBody"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2" style="text-align:right;font-weight:700;padding-top:8px;">Total Paid:</td>
+            <td id="rcptTotal" style="text-align:right;font-weight:800;color:var(--primary);font-size:1.1rem;padding-top:8px;"></td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr style="border-color:rgba(255,255,255,0.08);margin:var(--space-md) 0;">
+      <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);">Thank you for choosing MS Technologies! 🙏</p>
+      <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);">+91 88800 14003 | Electronic City, Bengaluru</p>
+      
+      <div class="receipt-actions no-print">
+        <button class="btn btn-primary" onclick="window.print()" style="flex:1;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Download / Print Receipt
+        </button>
+        <button class="btn btn-secondary" id="receiptDoneBtn" style="flex:1;justify-content:center;">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/particles.js"></script>
+  <script type="module" src="/js/bg-animations.js"></script>
+  <script type="module" src="/js/reviews.js"></script>
+  <script type="module" src="/js/main.js"></script>
+  <!-- rentals.js only loaded on rentals.html -->
+  <script type="module" src="/js/auth-modal.js"></script>
+
+  <!-- Google Maps JS API (loaded on demand) -->
+  <script>
+    // ─── AUTH SYSTEM ───────────────────────────────────────────────────────────
+    function switchAuthTab(tab) {
+      const siForm = document.getElementById('signInForm');
+      const suForm = document.getElementById('signUpForm');
+      const fpForm = document.getElementById('forgotPasswordForm');
+      const tabSI  = document.getElementById('tabSignIn');
+      const tabSU  = document.getElementById('tabSignUp');
+
+      if (siForm) siForm.style.display = 'none';
+      if (suForm) suForm.style.display = 'none';
+      if (fpForm) fpForm.style.display = 'none';
+
+      if (tabSI) { tabSI.style.background = 'transparent'; tabSI.style.color = 'var(--text-muted)'; }
+      if (tabSU) { tabSU.style.background = 'transparent'; tabSU.style.color = 'var(--text-muted)'; }
+
+      if (tab === 'signin') {
+        if (siForm) siForm.style.display = 'block';
+        if (tabSI) { tabSI.style.background = 'var(--primary)'; tabSI.style.color = '#fff'; }
+      } else if (tab === 'signup') {
+        if (suForm) suForm.style.display = 'block';
+        if (tabSU) { tabSU.style.background = 'var(--primary)'; tabSU.style.color = '#fff'; }
+      } else if (tab === 'forgot') {
+        if (fpForm) fpForm.style.display = 'block';
+        document.getElementById('fpStep1').style.display = 'block';
+        document.getElementById('fpStep2').style.display = 'none';
+        document.getElementById('fpError').style.display = 'none';
+        document.getElementById('fpSuccess').style.display = 'none';
+        document.getElementById('fpIdentifier').value = '';
+        document.getElementById('fpOtp').value = '';
+        document.getElementById('fpNewPassword').value = '';
+        document.getElementById('fpConfirmPassword').value = '';
+      }
+    }
+
+    async function sendForgotPasswordOtp() {
+      const identifier = document.getElementById('fpIdentifier').value.trim();
+      const errEl = document.getElementById('fpError');
+      errEl.style.display = 'none';
+      if (!identifier) {
+        errEl.textContent = '⚠️ Please enter your email or phone.';
+        errEl.style.display = 'block';
+        return;
+      }
+
+      try {
+        const res = await fetch('http://localhost:4000/api/auth/forgot-password/send-otp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ identifier })
+        });
+        const data = await res.json();
+        if (!data.success) {
+          errEl.textContent = '⚠️ ' + data.error;
+          errEl.style.display = 'block';
+          return;
+        }
+
+        // Show step 2
+        document.getElementById('fpStep1').style.display = 'none';
+        document.getElementById('fpStep2').style.display = 'block';
+
+        // If server is in demo mode, show the OTP visually
+        const demoBox = document.getElementById('fpDemoOtpBox');
+        if (demoBox) {
+          if (data.demoOtp) {
+            demoBox.innerHTML = `🔧 <strong>Demo Mode:</strong> Your OTP is <strong style="color:#00b4d8;font-size:1.3em;letter-spacing:4px">${data.demoOtp}</strong><br><small style="opacity:0.75">(Set up Fast2SMS or MSG91 API key in .env for real SMS)</small>`;
+            demoBox.style.display = 'block';
+          } else {
+            demoBox.style.display = 'none';
+          }
+        }
+      } catch (err) {
+        errEl.textContent = '⚠️ Could not contact verification server.';
+        errEl.style.display = 'block';
+      }
+    }
+
+    async function handleForgotPasswordReset(e) {
+      e.preventDefault();
+      const identifier = document.getElementById('fpIdentifier').value.trim();
+      const otp = document.getElementById('fpOtp').value.trim();
+      const newPassword = document.getElementById('fpNewPassword').value;
+      const confirmPassword = document.getElementById('fpConfirmPassword').value;
+      const errEl = document.getElementById('fpError');
+      const succEl = document.getElementById('fpSuccess');
+
+      errEl.style.display = 'none';
+      succEl.style.display = 'none';
+
+      if (newPassword.length < 6) {
+        errEl.textContent = '⚠️ Password must be at least 6 characters.';
+        errEl.style.display = 'block';
+        return;
+      }
+
+      if (newPassword !== confirmPassword) {
+        errEl.textContent = '⚠️ Passwords do not match.';
+        errEl.style.display = 'block';
+        return;
+      }
+
+      try {
+        const res = await fetch('http://localhost:4000/api/auth/forgot-password/reset', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ identifier, otp, newPassword })
+        });
+        const data = await res.json();
+        if (!data.success) {
+          errEl.textContent = '⚠️ ' + data.error;
+          errEl.style.display = 'block';
+          return;
+        }
+
+        document.getElementById('fpStep2').style.display = 'none';
+        succEl.textContent = '🎉 ' + data.message;
+        succEl.style.display = 'block';
+        setTimeout(() => {
+          switchAuthTab('signin');
+        }, 2500);
+      } catch {
+        errEl.textContent = '⚠️ Failed to reset password. Please check your connection.';
+        errEl.style.display = 'block';
+      }
+    }
+
+    async function handleSignIn(e) {
+      e.preventDefault();
+      const identifier = document.getElementById('siIdentifier').value.trim();
+      const password   = document.getElementById('siPassword').value;
+      const errEl      = document.getElementById('siError');
+      errEl.style.display = 'none';
+      const btn = e.target.querySelector('button[type=submit]');
+      btn.textContent = 'Signing in…'; btn.disabled = true;
+      try {
+        const res = await fetch('http://localhost:4000/api/auth/login', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ identifier, password })
+        });
+        const data = await res.json();
+        if (!data.success) { errEl.textContent = data.error; errEl.style.display = 'block'; return; }
+        localStorage.setItem('mst_jwt_token', data.token);
+        localStorage.setItem('mst_current_user', JSON.stringify(data.user));
+        document.getElementById('authModal').style.display = 'none';
+        updateAuthNav();
+        if (data.redirectAdmin) { window.location.href = 'admin.html'; }
+        else { showToast('✅ Welcome back, ' + data.user.name + '!'); }
+      } catch {
+        errEl.textContent = '⚠️ Could not connect to server. Make sure backend is running (npm run server).';
+        errEl.style.display = 'block';
+      } finally { btn.textContent = 'Sign In →'; btn.disabled = false; }
+    }
+
+    async function handleSignUp(e) {
+      e.preventDefault();
+      const name = document.getElementById('suName').value.trim();
+      const phone = document.getElementById('suPhone').value.trim();
+      const email = document.getElementById('suEmail').value.trim();
+      const password = document.getElementById('suPassword').value;
+      const address = document.getElementById('suAddress').value.trim();
+      const errEl = document.getElementById('suError');
+      errEl.style.display = 'none';
+      const btn = e.target.querySelector('button[type=submit]');
+      btn.textContent = 'Creating…'; btn.disabled = true;
+      try {
+        const res = await fetch('http://localhost:4000/api/auth/signup', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, phone, email, password, address })
+        });
+        const data = await res.json();
+        if (!data.success) { errEl.textContent = data.error; errEl.style.display = 'block'; return; }
+        localStorage.setItem('mst_jwt_token', data.token);
+        localStorage.setItem('mst_current_user', JSON.stringify(data.user));
+        document.getElementById('authModal').style.display = 'none';
+        updateAuthNav();
+        showToast('🎉 Account created! Welcome, ' + data.user.name + '!');
+      } catch {
+        errEl.textContent = '⚠️ Server not reachable. Run: npm run server';
+        errEl.style.display = 'block';
+      } finally { btn.textContent = 'Create Account →'; btn.disabled = false; }
+    }
+
+    function updateAuthNav() {
+      const user = JSON.parse(localStorage.getItem('mst_current_user') || 'null');
+      const authBtn    = document.getElementById('authNavBtn');
+      const userBadge  = document.getElementById('userProfileBadge');
+      const userName   = document.getElementById('authUserName');
+      const ordersLink = document.getElementById('navOrdersLink');
+      if (user) {
+        if (authBtn)    authBtn.style.display = 'none';
+        if (userBadge)  userBadge.style.display = 'inline-flex';
+        if (userName)   userName.textContent = '👤 ' + user.name.split(' ')[0];
+        if (ordersLink) ordersLink.style.display = 'inline-flex';
+      } else {
+        if (authBtn)    authBtn.style.display = 'inline-flex';
+        if (userBadge)  userBadge.style.display = 'none';
+        if (ordersLink) ordersLink.style.display = 'none';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      updateAuthNav();
+      const authNavBtn = document.getElementById('authNavBtn');
+      if (authNavBtn) authNavBtn.addEventListener('click', () => {
+        document.getElementById('authModal').style.display = 'flex';
+      });
+      const authLogoutBtn = document.getElementById('authLogoutBtn');
+      if (authLogoutBtn) authLogoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('mst_jwt_token');
+        localStorage.removeItem('mst_current_user');
+        updateAuthNav();
+        showToast('👋 You have been signed out.');
+      });
+    });
+
+
+
+    function showToast(msg) {
+      let t = document.getElementById('globalToast');
+      if (!t) {
+        t = document.createElement('div'); t.id = 'globalToast';
+        t.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:99999;background:#0c1222;border:1px solid rgba(0,180,216,0.4);color:#fff;padding:14px 22px;border-radius:12px;font-size:0.9rem;box-shadow:0 8px 30px rgba(0,0,0,0.5);transition:opacity 0.3s;opacity:0;pointer-events:none;';
+        document.body.appendChild(t);
+      }
+      t.textContent = msg; t.style.opacity = '1';
+      clearTimeout(t._timer);
+      t._timer = setTimeout(() => { t.style.opacity = '0'; }, 3500);
+    }
+  </script>
+</body>
+</html>

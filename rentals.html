@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Rentals — MS Technologies</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" type="image/png" href="assets/logo_small.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo_nav.png" alt="MS Technologies" class="nav-logo-img" width="40" height="40">
+        <span class="logo-text">MS Technologies</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="products.html">Products</a>
+        <a href="rentals.html" class="active">Rentals</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#popular-times">Popular Times</a>
+        <a href="index.html#booking">Book A Repair</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      </div>
+  </header>
+
+  <div style="padding-top: 100px;">
+    <!-- ═══ Laptop Rentals Section ═══ -->
+    <section class="section" id="laptop-rentals">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">💻 Laptop <span class="text-gradient">Rentals</span></h2>
+          <p class="section-subtitle">Need a laptop temporarily? Rent from our curated, well-maintained fleet — daily, weekly, or monthly plans available.</p>
+        </div>
+
+        <div id="rentalsLoadingMsg" style="text-align:center; padding:40px; color:var(--text-muted); font-size:0.95rem;">
+          ⏳ Loading available laptops...
+        </div>
+
+        <div id="rentalsGrid" class="catalog-grid" style="margin-top:32px;"></div>
+
+        <div id="rentalsEmptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--text-muted);">
+          <div style="font-size:3rem; margin-bottom:16px;">💻</div>
+          <p style="font-size:1rem;">No rental laptops available right now.</p>
+          <p style="font-size:0.85rem; margin-top:6px;">Check back soon or contact us directly!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Laptop Rental Enquiry Modal -->
+  <div id="rentalEnquiryModal" style="display:none; position:fixed; inset:0; z-index:10000; background:rgba(15,23,42,0.65); backdrop-filter:blur(8px); align-items:center; justify-content:center;">
+    <div style="background:#ffffff; border:1px solid rgba(14,165,233,0.3); border-radius:18px; padding:32px 28px; width:100%; max-width:440px; position:relative; box-shadow:0 30px 80px rgba(14,165,233,0.2); max-height:92vh; overflow-y:auto;">
+      <button onclick="document.getElementById('rentalEnquiryModal').style.display='none'" style="position:absolute; top:14px; right:16px; background:none; border:none; color:#64748b; font-size:1.5rem; cursor:pointer;">×</button>
+      <h3 style="margin:0 0 4px; color:#0f172a; font-size:1.2rem;">💻 Laptop Rental Enquiry</h3>
+      <p style="color:#64748b; font-size:0.83rem; margin:0 0 16px;">Verify your mobile number to send enquiry to MS Technologies.</p>
+      <div id="rentalEnquiryLaptopName" style="color:var(--primary); font-weight:700; margin-bottom:16px; font-size:0.95rem;"></div>
+      
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div>
+          <label style="font-size:0.8rem; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Full Name *</label>
+          <input id="rentalEnqName" type="text" placeholder="Your full name" style="width:100%; padding:11px 14px; border-radius:10px; border:1px solid rgba(14,165,233,0.3); background:#ffffff; color:#0f172a; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+
+        <div>
+          <label style="font-size:0.8rem; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Mobile Number *</label>
+          <div style="display:flex; gap:8px;">
+            <input id="rentalEnqPhone" type="tel" placeholder="10-digit mobile number" style="flex:1; padding:11px 14px; border-radius:10px; border:1px solid rgba(14,165,233,0.3); background:#ffffff; color:#0f172a; font-size:0.9rem; box-sizing:border-box;">
+            <button type="button" id="rentalSendOtpBtn" class="btn btn-secondary" style="padding:10px 14px; font-size:0.82rem; flex-shrink:0; white-space:nowrap;">Verify Mobile</button>
+          </div>
+        </div>
+
+        <!-- Phone Verification OTP Section -->
+        <div id="rentalOtpWrapper" style="display:none; background:#f8fafc; border:1px solid rgba(14,165,233,0.3); border-radius:10px; padding:12px 14px;">
+          <label style="font-size:0.82rem; color:var(--primary); font-weight:700; display:block; margin-bottom:6px;">Enter Verification OTP (Fixed 1234 for demo)</label>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input type="text" id="rentalOtpInput" placeholder="••••" maxlength="4" style="padding:10px 12px; border-radius:8px; border:1px solid rgba(14,165,233,0.4); background:#ffffff; color:#0f172a; font-size:1.1rem; letter-spacing:6px; text-align:center; max-width:110px; box-sizing:border-box;">
+            <button type="button" id="rentalVerifyOtpBtn" class="btn btn-primary" style="padding:10px 16px; font-size:0.85rem;">Verify OTP</button>
+          </div>
+        </div>
+        <div id="rentalVerifiedBadge" style="display:none; color:#10b981; font-weight:700; font-size:0.85rem;">
+          ✓ Mobile Verified Successfully
+        </div>
+
+        <div>
+          <label style="font-size:0.8rem; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Email Address (Optional)</label>
+          <input id="rentalEnqEmail" type="email" placeholder="your@email.com" style="width:100%; padding:11px 14px; border-radius:10px; border:1px solid rgba(14,165,233,0.3); background:#ffffff; color:#0f172a; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+
+        <div>
+          <label style="font-size:0.8rem; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Required Rental Period</label>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <div>
+              <span style="font-size:0.75rem; color:#64748b; display:block; margin-bottom:2px;">From Date</span>
+              <input id="rentalEnqFromDate" type="date" style="width:100%; padding:10px; border-radius:10px; border:1px solid rgba(14,165,233,0.3); background:#ffffff; color:#0f172a; font-size:0.85rem; box-sizing:border-box;">
+            </div>
+            <div>
+              <span style="font-size:0.75rem; color:#64748b; display:block; margin-bottom:2px;">To Date</span>
+              <input id="rentalEnqToDate" type="date" style="width:100%; padding:10px; border-radius:10px; border:1px solid rgba(14,165,233,0.3); background:#ffffff; color:#0f172a; font-size:0.85rem; box-sizing:border-box;">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label style="font-size:0.8rem; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Additional Requirements</label>
+          <textarea id="rentalEnqNote" placeholder="Any specific software, RAM upgrade, or delivery request..." rows="2" style="width:100%; padding:11px 14px; border-radius:10px; border:1px solid rgba(14,165,233,0.3); background:#ffffff; color:#0f172a; font-size:0.88rem; resize:vertical; box-sizing:border-box;"></textarea>
+        </div>
+
+        <div id="rentalEnqError" style="display:none; color:#ef4444; font-size:0.83rem; font-weight:600;"></div>
+        <button id="rentalSubmitBtn" onclick="submitRentalEnquiry()" class="btn btn-primary" style="width:100%; justify-content:center; padding:13px; font-size:0.95rem; font-weight:700; margin-top:4px;">📩 Send Rental Enquiry →</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  <!-- Footer -->
+  <!-- ═══ FOOTER — Edify Black ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">MS Technologies</div>
+          <p>India's most trusted certified refurbished laptop &amp; custom PC marketplace. 50,000+ happy customers.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/mstechnologiees?igsh=YzNseDY3Zzl3bDVq" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1DhC73VV81/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+          <div class="footer-badges-row">
+            <span class="footer-badge-pill">✅ CPCB Certified</span>
+            <span class="footer-badge-pill">🌿 LiFE</span>
+            <span class="footer-badge-pill">🇮🇳 Make in India</span>
+          </div>
+          <div class="address-text">
+            NO 730 SA Building 1st Floor, New Mico Rd,<br>
+            Chennakeshava Nagar, Hosa Road, Electronic City,<br>
+            Bengaluru, Karnataka – 560100, India
+          </div>
+          <p style="font-size:0.75rem;color:#475569;margin-top:2px;">MS Technologies Private Limited</p>
+        </div>
+        <div class="footer-links">
+          <h4>S H O P</h4>
+        </div>
+        <div class="footer-links">
+          <h4>S U P P O R T</h4>
+          <div class="footer-support-item">
+            <strong>Email</strong>
+            <a href="mailto:MSTechnologiees@gmail.com" style="color:#94a3b8;text-decoration:none;">MSTechnologiees@gmail.com</a>
+          </div>
+          <div class="footer-support-item">
+            <strong>For Sales &amp; Service</strong>
+            <a href="tel:+918880014003" style="color:#94a3b8;text-decoration:none;">+91 88800 14003</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>C O M P A N Y</h4>
+          <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a>
+          <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="about.html" target="_blank" rel="noopener">About Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-built-by">
+          <span>Built by</span>
+          <a href="https://techsupportaverontech-lgtm.github.io/Averon-portfolio/" target="_blank" rel="noopener" title="Averon Tech">
+            <img src="assets/averon_tech_logo.jpg" alt="Averon Tech" class="footer-built-by-logo">
+          </a>
+        </div>
+        <p class="footer-bottom-copyright">&copy; 2026 MS Technologies Private Limited. All rights reserved.</p>
+        <div class="footer-bottom-spacer" aria-hidden="true"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/918880014003" target="_blank" rel="noopener" class="floating-wa-btn" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.613.613l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.344 0-4.507-.803-6.22-2.147l-.364-.299-3.768 1.263 1.263-3.768-.299-.364A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+
+  <!-- Auth Modal (Sign In / Sign Up) -->
+  <div id="authModal" style="display:none; position:fixed; inset:0; z-index:10000; background:rgba(5,8,17,0.85); backdrop-filter:blur(8px); align-items:center; justify-content:center;">
+    <div style="background:#0c1222; border:1px solid rgba(0,180,216,0.3); border-radius:18px; padding:36px 32px; width:100%; max-width:420px; position:relative; box-shadow:0 30px 80px rgba(0,0,0,0.7);">
+      <button onclick="document.getElementById('authModal').style.display='none'" style="position:absolute; top:14px; right:16px; background:none; border:none; color:#aaa; font-size:1.5rem; cursor:pointer;">×</button>
+      <div style="display:flex; gap:0; margin-bottom:24px; border-radius:10px; overflow:hidden; border:1px solid rgba(0,180,216,0.2);">
+        <button id="tabSignIn" onclick="switchAuthTab('signin')" style="flex:1; padding:10px; background:var(--primary); color:#fff; font-weight:700; border:none; cursor:pointer; font-size:0.9rem;">Sign In</button>
+        <button id="tabSignUp" onclick="switchAuthTab('signup')" style="flex:1; padding:10px; background:transparent; color:var(--text-muted); border:none; cursor:pointer; font-size:0.9rem;">Sign Up</button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="signInForm" onsubmit="handleSignIn(event)">
+        <div style="margin-bottom:14px;">
+          <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Email or Phone</label>
+          <input id="siIdentifier" type="text" placeholder="admin or your email/phone" required
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div style="margin-bottom:12px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+            <label style="font-size:0.82rem; color:var(--text-muted); margin:0;">Password</label>
+            <a href="#" onclick="switchAuthTab('forgot'); return false;" style="color:var(--primary); font-size:0.78rem; text-decoration:none;">Forgot Password?</a>
+          </div>
+          <input id="siPassword" type="password" placeholder="••••••••" required
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div id="siError" style="color:#ef4444; font-size:0.82rem; margin-bottom:10px; display:none;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Sign In →</button>
+        <p style="text-align:center; margin-top:14px; font-size:0.82rem; color:var(--text-muted);">No account? <a href="#" onclick="switchAuthTab('signup'); return false;" style="color:var(--primary);">Sign Up</a></p>
+      </form>
+
+      <!-- Forgot Password Form -->
+      <form id="forgotPasswordForm" style="display:none;" onsubmit="handleForgotPasswordReset(event)">
+        <div id="fpStep1">
+          <div style="margin-bottom:14px;">
+            <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Registered Email or Phone</label>
+            <input id="fpIdentifier" type="text" placeholder="your registered email or phone" required
+              style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+          </div>
+          <button type="button" onclick="sendForgotPasswordOtp()" class="btn btn-primary" style="width:100%; justify-content:center;">Send Verification OTP →</button>
+        </div>
+
+        <div id="fpStep2" style="display:none;">
+          <div style="margin-bottom:14px; text-align:center; color:#2ecc71; font-size:0.85rem; font-weight:600;">
+            📱 OTP sent to your registered mobile number!
+          </div>
+          <div id="fpDemoOtpBox" style="display:none; background:rgba(0,180,216,0.1); border:1px solid rgba(0,180,216,0.4); border-radius:8px; padding:12px 16px; margin-bottom:14px; font-size:0.85rem; color:#e0f0ff; line-height:1.6;"></div>
+          <div style="margin-bottom:14px;">
+            <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Enter Verification OTP</label>
+            <input id="fpOtp" type="text" placeholder="Enter 6-digit OTP" required
+              style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box; letter-spacing:4px; text-align:center;">
+          </div>
+          <div style="margin-bottom:14px;">
+            <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">New Password</label>
+            <input id="fpNewPassword" type="password" placeholder="Min 6 characters" required
+              style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+          </div>
+          <div style="margin-bottom:18px;">
+            <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Confirm New Password</label>
+            <input id="fpConfirmPassword" type="password" placeholder="Re-enter new password" required
+              style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Reset Password ✓</button>
+        </div>
+        
+        <div id="fpError" style="color:#ef4444; font-size:0.82rem; margin-top:10px; display:none;"></div>
+        <div id="fpSuccess" style="color:#2ecc71; font-size:0.85rem; margin-top:10px; display:none; text-align:center; font-weight:600;"></div>
+        <p style="text-align:center; margin-top:14px; font-size:0.82rem; color:var(--text-muted);"><a href="#" onclick="switchAuthTab('signin'); return false;" style="color:var(--primary); text-decoration:none;">Back to Sign In</a></p>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signUpForm" style="display:none;" onsubmit="handleSignUp(event)">
+        <div style="margin-bottom:12px;">
+          <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Full Name *</label>
+          <input id="suName" type="text" placeholder="Your full name" required
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Phone Number *</label>
+          <input id="suPhone" type="tel" placeholder="10-digit mobile number" required
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Email Address *</label>
+          <input id="suEmail" type="email" placeholder="your@email.com" required
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Password *</label>
+          <input id="suPassword" type="password" placeholder="Create a password" required
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div style="margin-bottom:16px;">
+          <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:5px;">Default Address (optional)</label>
+          <input id="suAddress" type="text" placeholder="Your area / locality"
+            style="width:100%; background:#05080f; border:1px solid rgba(0,180,216,0.3); border-radius:8px; padding:10px 14px; color:#fff; font-size:0.9rem; box-sizing:border-box;">
+        </div>
+        <div id="suError" style="color:#ef4444; font-size:0.82rem; margin-bottom:10px; display:none;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Create Account →</button>
+        <p style="text-align:center; margin-top:14px; font-size:0.82rem; color:var(--text-muted);">Have an account? <a href="#" onclick="switchAuthTab('signin'); return false;" style="color:var(--primary);">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/rentals.js"></script>
+  <script type="module" src="js/upi-payment.js"></script>
+  <script type="module" src="js/auth-modal.js"></script>
+</body>
+</html>

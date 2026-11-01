@@ -1,0 +1,1883 @@
+{
+  "cpu": [
+    {
+      "name": "Intel Core i3-12100F",
+      "image": "assets/products/cpu/i3.jpg",
+      
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i3-12100F",
+        "Generation": "12th Gen",
+        "Cores & Threads": "4 Cores / 8 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i5-12400F",
+      "image": "assets/products/cpu/i5.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i5-12400F",
+        "Generation": "12th Gen",
+        "Cores & Threads": "6 Cores / 12 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i5-12600K",
+      "image": "assets/products/cpu/i5-12600K.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i5-12600K",
+        "Generation": "12th Gen",
+        "Cores & Threads": "10 Cores / 16 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i7-12700K",
+      "image": "assets/products/cpu/i7-12.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i7-12700K",
+        "Generation": "12th Gen",
+        "Cores & Threads": "12 Cores / 20 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i9-12900K",
+      "image": "assets/products/cpu/i9-12.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i9-12900K",
+        "Generation": "12th Gen",
+        "Cores & Threads": "16 Cores / 24 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i5-13400F",
+      "image": "assets/products/cpu/i5-13400f.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i5-13400F",
+        "Generation": "13th Gen",
+        "Cores & Threads": "10 Cores / 16 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i5-13600K",
+      "image": "assets/products/cpu/i5-136.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i5-13600K",
+        "Generation": "13th Gen",
+        "Cores & Threads": "14 Cores / 20 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i7-13700K",
+      "image": "assets/products/cpu/i7-137.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i7-13700K",
+        "Generation": "13th Gen",
+        "Cores & Threads": "16 Cores / 24 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i9-13900K",
+      "image": "assets/products/cpu/i9-139.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i9-13900K",
+        "Generation": "13th Gen",
+        "Cores & Threads": "24 Cores / 32 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i5-14400F",
+      "image": "assets/products/cpu/i5-144.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i5-14400F",
+        "Generation": "14th Gen",
+        "Cores & Threads": "10 Cores / 16 Threads"
+      }
+    },
+    {
+      "name": "Intel Core i7-14700K",
+      "image": "assets/products/cpu/i7-14.jpg",
+      "details": {
+        "Brand": "Intel",
+        "Model": "Core i7-14700K",
+        "Generation": "14th Gen",
+        "Cores & Threads": "20 Cores / 28 Threads"
+      }
+    },
+    {
+      "name": "AMD Ryzen 5 5600",
+      "image": "assets/products/cpu/amd1.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "Ryzen 5 5600",
+        "Generation": "5000 Series",
+        "Cores & Threads": "6 Cores / 12 Threads"
+      }
+    },
+    {
+      "name": "AMD Ryzen 5 7600",
+      "image": "assets/products/cpu/amd2.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "Ryzen 5 7600",
+        "Generation": "7000 Series",
+        "Cores & Threads": "6 Cores / 12 Threads"
+      }
+    },
+    {
+      "name": "AMD Ryzen 7 7800X3D",
+      "image": "assets/products/cpu/amd3.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "Ryzen 7 7800X3D",
+        "Generation": "7000 Series",
+        "Cores & Threads": "8 Cores / 16 Threads"
+      }
+    },
+    {
+      "name": "AMD Ryzen 9 7900X",
+      "image": "assets/products/cpu/amd4.png",
+      "details": {
+        "Brand": "AMD",
+        "Model": "Ryzen 9 7900X",
+        "Generation": "7000 Series",
+        "Cores & Threads": "12 Cores / 24 Threads"
+      }
+    }
+  ],
+
+  "gpu": [
+    {
+      "name": "ASUS RTX 3050",
+      "image": "assets/products/gpu/1.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "RTX 3050",
+        "VRAM": "8GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "MSI RTX 3060",
+      "image": "assets/products/gpu/2.jpeg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "RTX 3060",
+        "VRAM": "12GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "Gigabyte RTX 3060 Ti",
+      "image": "assets/products/gpu/3.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "RTX 3060 Ti",
+        "VRAM": "8GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "ASUS RTX 4060",
+      "image": "assets/products/gpu/4.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "RTX 4060",
+        "VRAM": "8GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "MSI RTX 4060 Ti",
+      "image": "assets/products/gpu/5.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "RTX 4060 Ti",
+        "VRAM": "8GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "Gigabyte RTX 4070",
+      "image": "assets/products/gpu/6.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "RTX 4070",
+        "VRAM": "12GB",
+        "Memory Type": "GDDR6X"
+      }
+    },
+    {
+      "name": "ASUS RTX 4070 Super",
+      "image": "assets/products/gpu/7.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "RTX 4070 Super",
+        "VRAM": "12GB",
+        "Memory Type": "GDDR6X"
+      }
+    },
+    {
+      "name": "MSI RTX 4070 Ti Super",
+      "image": "assets/products/gpu/8.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "RTX 4070 Ti Super",
+        "VRAM": "16GB",
+        "Memory Type": "GDDR6X"
+      }
+    },
+    {
+      "name": "Gigabyte RTX 4080 Super",
+      "image": "assets/products/gpu/9.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "RTX 4080 Super",
+        "VRAM": "16GB",
+        "Memory Type": "GDDR6X"
+      }
+    },
+    {
+      "name": "ASUS RTX 4090",
+      "image": "assets/products/gpu/10.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "RTX 4090",
+        "VRAM": "24GB",
+        "Memory Type": "GDDR6X"
+      }
+    },
+    {
+      "name": "AMD RX 6600",
+      "image": "assets/products/gpu/11.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "RX 6600",
+        "VRAM": "8GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "AMD RX 6700 XT",
+      "image": "assets/products/gpu/12.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "RX 6700 XT",
+        "VRAM": "12GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "AMD RX 7600",
+      "image": "assets/products/gpu/13.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "RX 7600",
+        "VRAM": "8GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "AMD RX 7800 XT",
+      "image": "assets/products/gpu/14.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "RX 7800 XT",
+        "VRAM": "16GB",
+        "Memory Type": "GDDR6"
+      }
+    },
+    {
+      "name": "AMD RX 7900 XTX",
+      "image": "assets/products/gpu/15.jpg",
+      "details": {
+        "Brand": "AMD",
+        "Model": "RX 7900 XTX",
+        "VRAM": "24GB",
+        "Memory Type": "GDDR6"
+      }
+    }
+  ],
+
+  "motherboard": [
+    {
+      "name": "MSI PRO H610M-E",
+      "image": "assets/products/motherboard/1.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "PRO H610M-E",
+        "Socket": "LGA1700",
+        "Chipset": "H610",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "ASUS PRIME H610M-E",
+      "image": "assets/products/motherboard/2.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "PRIME H610M-E",
+        "Socket": "LGA1700",
+        "Chipset": "H610",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "Gigabyte H610M H",
+      "image": "assets/products/motherboard/3.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "H610M H",
+        "Socket": "LGA1700",
+        "Chipset": "H610",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "MSI PRO B660M-A",
+      "image": "assets/products/motherboard/4.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "PRO B660M-A",
+        "Socket": "LGA1700",
+        "Chipset": "B660",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "ASUS PRIME B660M-A",
+      "image": "assets/products/motherboard/5.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "PRIME B660M-A",
+        "Socket": "LGA1700",
+        "Chipset": "B660",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "MSI PRO B760M-A",
+      "image": "assets/products/motherboard/6.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "PRO B760M-A",
+        "Socket": "LGA1700",
+        "Chipset": "B760",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "ASUS PRIME B760M-A",
+      "image": "assets/products/motherboard/7.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "PRIME B760M-A",
+        "Socket": "LGA1700",
+        "Chipset": "B760",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "Gigabyte B760M DS3H",
+      "image": "assets/products/motherboard/8.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "B760M DS3H",
+        "Socket": "LGA1700",
+        "Chipset": "B760",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "MSI MAG B760 Tomahawk",
+      "image": "assets/products/motherboard/9.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "MAG B760 Tomahawk",
+        "Socket": "LGA1700",
+        "Chipset": "B760",
+        "Form Factor": "ATX"
+      }
+    },
+    {
+      "name": "ASUS TUF Gaming B760-PLUS",
+      "image": "assets/products/motherboard/10.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF Gaming B760-PLUS",
+        "Socket": "LGA1700",
+        "Chipset": "B760",
+        "Form Factor": "ATX"
+      }
+    },
+    {
+      "name": "MSI PRO B650M-A",
+      "image": "assets/products/motherboard/11.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "PRO B650M-A",
+        "Socket": "AM5",
+        "Chipset": "B650",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "ASUS PRIME B650M-A",
+      "image": "assets/products/motherboard/12.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "PRIME B650M-A",
+        "Socket": "AM5",
+        "Chipset": "B650",
+        "Form Factor": "Micro-ATX"
+      }
+    },
+    {
+      "name": "Gigabyte B650 Gaming X AX",
+      "image": "assets/products/motherboard/13.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "B650 Gaming X AX",
+        "Socket": "AM5",
+        "Chipset": "B650",
+        "Form Factor": "ATX"
+      }
+    },
+    {
+      "name": "MSI MAG B650 Tomahawk",
+      "image": "assets/products/motherboard/14.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "MAG B650 Tomahawk",
+        "Socket": "AM5",
+        "Chipset": "B650",
+        "Form Factor": "ATX"
+      }
+    },
+    {
+      "name": "ASUS ROG Strix B650E-F",
+      "image": "assets/products/motherboard/15.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "ROG Strix B650E-F",
+        "Socket": "AM5",
+        "Chipset": "B650E",
+        "Form Factor": "ATX"
+      }
+    }
+  ],
+
+  "ram": [
+    {
+      "name": "Corsair Vengeance 8GB",
+      "image": "assets/products/ram/1.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Capacity": "8GB",
+        "Speed": "3200MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "Corsair Vengeance 16GB",
+      "image": "assets/products/ram/2.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Capacity": "16GB",
+        "Speed": "3200MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "Corsair Vengeance 32GB",
+      "image": "assets/products/ram/3.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Capacity": "32GB",
+        "Speed": "3200MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "Kingston Fury Beast 16GB",
+      "image": "assets/products/ram/4.jpg",
+      "details": {
+        "Brand": "Kingston",
+        "Capacity": "16GB",
+        "Speed": "3200MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "Kingston Fury Beast 32GB",
+      "image": "assets/products/ram/5.jpg",
+      "details": {
+        "Brand": "Kingston",
+        "Capacity": "32GB",
+        "Speed": "3600MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "G.Skill Ripjaws V 16GB",
+      "image": "assets/products/ram/6.jpg",
+      "details": {
+        "Brand": "G.Skill",
+        "Capacity": "16GB",
+        "Speed": "3200MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "G.Skill Ripjaws V 32GB",
+      "image": "assets/products/ram/7.jpg",
+      "details": {
+        "Brand": "G.Skill",
+        "Capacity": "32GB",
+        "Speed": "3600MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "TeamGroup T-Force 16GB",
+      "image": "assets/products/ram/8.jpg",
+      "details": {
+        "Brand": "TeamGroup",
+        "Capacity": "16GB",
+        "Speed": "3200MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "TeamGroup T-Force 32GB",
+      "image": "assets/products/ram/9.jpg",
+      "details": {
+        "Brand": "TeamGroup",
+        "Capacity": "32GB",
+        "Speed": "3600MHz",
+        "DDR Type": "DDR4"
+      }
+    },
+    {
+      "name": "Corsair Vengeance DDR5 16GB",
+      "image": "assets/products/ram/10.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Capacity": "16GB",
+        "Speed": "5200MHz",
+        "DDR Type": "DDR5"
+      }
+    },
+    {
+      "name": "Corsair Vengeance DDR5 32GB",
+      "image": "assets/products/ram/11.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Capacity": "32GB",
+        "Speed": "5600MHz",
+        "DDR Type": "DDR5"
+      }
+    },
+    {
+      "name": "Kingston Fury Beast DDR5 16GB",
+      "image": "assets/products/ram/12.jpg",
+      "details": {
+        "Brand": "Kingston",
+        "Capacity": "16GB",
+        "Speed": "5200MHz",
+        "DDR Type": "DDR5"
+      }
+    },
+    {
+      "name": "G.Skill Flare X5 16GB",
+      "image": "assets/products/ram/13.jpg",
+      "details": {
+        "Brand": "G.Skill",
+        "Capacity": "16GB",
+        "Speed": "6000MHz",
+        "DDR Type": "DDR5"
+      }
+    },
+    {
+      "name": "G.Skill Trident Z5 32GB",
+      "image": "assets/products/ram/14.jpg",
+      "details": {
+        "Brand": "G.Skill",
+        "Capacity": "32GB",
+        "Speed": "6000MHz",
+        "DDR Type": "DDR5"
+      }
+    },
+    {
+      "name": "TeamGroup T-Force DDR5 32GB",
+      "image": "assets/products/ram/15.jpg",
+      "details": {
+        "Brand": "TeamGroup",
+        "Capacity": "32GB",
+        "Speed": "6000MHz",
+        "DDR Type": "DDR5"
+      }
+    }
+  ],
+
+  "storage": [
+    {
+      "name": "WD Green 480GB SSD",
+      "image": "assets/products/storage/1.jpg",
+      "details": {
+        "Brand": "Western Digital",
+        "Model": "Green",
+        "Capacity": "480GB",
+        "Type": "SATA SSD",
+        "Interface": "SATA III"
+      }
+    },
+    {
+      "name": "Crucial BX500 500GB",
+      "image": "assets/products/storage/2.jpg",
+      "details": {
+        "Brand": "Crucial",
+        "Model": "BX500",
+        "Capacity": "500GB",
+        "Type": "SATA SSD",
+        "Interface": "SATA III"
+      }
+    },
+    {
+      "name": "Samsung 870 EVO 500GB",
+      "image": "assets/products/storage/3.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "870 EVO",
+        "Capacity": "500GB",
+        "Type": "SATA SSD",
+        "Interface": "SATA III"
+      }
+    },
+    {
+      "name": "Samsung 980 SSD",
+      "image": "assets/products/storage/4.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "980",
+        "Capacity": "1TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 3.0"
+      }
+    },
+    {
+      "name": "WD Blue SN570",
+      "image": "assets/products/storage/5.jpg",
+      "details": {
+        "Brand": "Western Digital",
+        "Model": "SN570",
+        "Capacity": "1TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 3.0"
+      }
+    },
+    {
+      "name": "Crucial P3 1TB",
+      "image": "assets/products/storage/6.jpg",
+      "details": {
+        "Brand": "Crucial",
+        "Model": "P3",
+        "Capacity": "1TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 3.0"
+      }
+    },
+    {
+      "name": "Samsung 990 EVO",
+      "image": "assets/products/storage/7.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "990 EVO",
+        "Capacity": "1TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 4.0"
+      }
+    },
+    {
+      "name": "WD Black SN770",
+      "image": "assets/products/storage/8.jpg",
+      "details": {
+        "Brand": "Western Digital",
+        "Model": "SN770",
+        "Capacity": "1TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 4.0"
+      }
+    },
+    {
+      "name": "Kingston NV2 1TB",
+      "image": "assets/products/storage/9.jpg",
+      "details": {
+        "Brand": "Kingston",
+        "Model": "NV2",
+        "Capacity": "1TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 4.0"
+      }
+    },
+    {
+      "name": "Samsung 990 Pro",
+      "image": "assets/products/storage/10.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "990 Pro",
+        "Capacity": "2TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 4.0"
+      }
+    },
+    {
+      "name": "WD Black SN850X",
+      "image": "assets/products/storage/11.jpg",
+      "details": {
+        "Brand": "Western Digital",
+        "Model": "SN850X",
+        "Capacity": "2TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 4.0"
+      }
+    },
+    {
+      "name": "Seagate Barracuda 1TB",
+      "image": "assets/products/storage/12.jpg",
+      "details": {
+        "Brand": "Seagate",
+        "Model": "Barracuda",
+        "Capacity": "1TB",
+        "Type": "HDD",
+        "Interface": "SATA III"
+      }
+    },
+    {
+      "name": "Seagate Barracuda 2TB",
+      "image": "assets/products/storage/13.jpg",
+      "details": {
+        "Brand": "Seagate",
+        "Model": "Barracuda",
+        "Capacity": "2TB",
+        "Type": "HDD",
+        "Interface": "SATA III"
+      }
+    },
+    {
+      "name": "WD Blue 2TB HDD",
+      "image": "assets/products/storage/14.jpg",
+      "details": {
+        "Brand": "Western Digital",
+        "Model": "Blue",
+        "Capacity": "2TB",
+        "Type": "HDD",
+        "Interface": "SATA III"
+      }
+    },
+    {
+      "name": "Crucial T500 2TB",
+      "image": "assets/products/storage/15.jpg",
+      "details": {
+        "Brand": "Crucial",
+        "Model": "T500",
+        "Capacity": "2TB",
+        "Type": "NVMe SSD",
+        "Interface": "PCIe 4.0"
+      }
+    }
+  ],
+
+  "psu": [
+    {
+      "name": "Corsair CV450",
+      "image": "assets/products/psu/1.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "CV450",
+        "Wattage": "450W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "Corsair CV550",
+      "image": "assets/products/psu/2.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "CV550",
+        "Wattage": "550W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "Corsair CV650",
+      "image": "assets/products/psu/3.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "CV650",
+        "Wattage": "650W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "Cooler Master MWE 550",
+      "image": "assets/products/psu/4.jpg",
+      "details": {
+        "Brand": "Cooler Master",
+        "Model": "MWE 550",
+        "Wattage": "550W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "Cooler Master MWE 650",
+      "image": "assets/products/psu/5.jpg",
+      "details": {
+        "Brand": "Cooler Master",
+        "Model": "MWE 650",
+        "Wattage": "650W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "Cooler Master MWE 750",
+      "image": "assets/products/psu/6.jpg",
+      "details": {
+        "Brand": "Cooler Master",
+        "Model": "MWE 750",
+        "Wattage": "750W",
+        "Efficiency": "80+ Gold"
+      }
+    },
+    {
+      "name": "MSI MAG A650BN",
+      "image": "assets/products/psu/7.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "MAG A650BN",
+        "Wattage": "650W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "MSI MAG A750GL",
+      "image": "assets/products/psu/9.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "MAG A750GL",
+        "Wattage": "750W",
+        "Efficiency": "80+ Gold"
+      }
+    },
+    {
+      "name": "DeepCool PK550D",
+      "image": "assets/products/psu/10.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "PK550D",
+        "Wattage": "550W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "DeepCool PM750D",
+      "image": "assets/products/psu/11.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "PM750D",
+        "Wattage": "750W",
+        "Efficiency": "80+ Gold"
+      }
+    },
+    {
+      "name": "ASUS TUF Gaming 650W",
+      "image": "assets/products/psu/12.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF Gaming 650W",
+        "Wattage": "650W",
+        "Efficiency": "80+ Bronze"
+      }
+    },
+    {
+      "name": "ASUS TUF Gaming 750W",
+      "image": "assets/products/psu/13.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF Gaming 750W",
+        "Wattage": "750W",
+        "Efficiency": "80+ Gold"
+      }
+    },
+    {
+      "name": "Seasonic Focus GX-750",
+      "image": "assets/products/psu/14.jpg",
+      "details": {
+        "Brand": "Seasonic",
+        "Model": "Focus GX-750",
+        "Wattage": "750W",
+        "Efficiency": "80+ Gold"
+      }
+    },
+    {
+      "name": "Seasonic Focus GX-850",
+      "image": "assets/products/psu/15.jpg",
+      "details": {
+        "Brand": "Seasonic",
+        "Model": "Focus GX-850",
+        "Wattage": "850W",
+        "Efficiency": "80+ Gold"
+      }
+    },
+    {
+      "name": "Corsair RM1000e",
+      "image": "assets/products/psu/16.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "RM1000e",
+        "Wattage": "1000W",
+        "Efficiency": "80+ Gold"
+      }
+    }
+  ],
+
+  "cooler": [
+    {
+      "name": "Cooler Master Hyper 212",
+      "image": "assets/products/cooler/1.jpg",
+      "details": {
+        "Brand": "Cooler Master",
+        "Model": "Hyper 212",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "DeepCool AK400",
+      "image": "assets/products/cooler/2.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "AK400",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "DeepCool AK500",
+      "image": "assets/products/cooler/3.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "AK500",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "DeepCool AK620",
+      "image": "assets/products/cooler/4.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "AK620",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Noctua NH-D15",
+      "image": "assets/products/cooler/5.jpg",
+      "details": {
+        "Brand": "Noctua",
+        "Model": "NH-D15",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Noctua NH-U12S",
+      "image": "assets/products/cooler/6.jpg",
+      "details": {
+        "Brand": "Noctua",
+        "Model": "NH-U12S",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "be quiet! Pure Rock 2",
+      "image": "assets/products/cooler/7.jpg",
+      "details": {
+        "Brand": "be quiet!",
+        "Model": "Pure Rock 2",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Corsair H100",
+      "image": "assets/products/cooler/8.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "H100",
+        "Type": "240mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Corsair H100i",
+      "image": "assets/products/cooler/9.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "H100i",
+        "Type": "240mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Corsair H150i",
+      "image": "assets/products/cooler/10.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "H150i",
+        "Type": "360mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "NZXT Kraken 240",
+      "image": "assets/products/cooler/11.jpg",
+      "details": {
+        "Brand": "NZXT",
+        "Model": "Kraken 240",
+        "Type": "240mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "NZXT Kraken 360",
+      "image": "assets/products/cooler/12.jpg",
+      "details": {
+        "Brand": "NZXT",
+        "Model": "Kraken 360",
+        "Type": "360mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Arctic Liquid Freezer III 240",
+      "image": "assets/products/cooler/13.jpg",
+      "details": {
+        "Brand": "Arctic",
+        "Model": "Liquid Freezer III 240",
+        "Type": "240mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Arctic Liquid Freezer III 360",
+      "image": "assets/products/cooler/14.jpg",
+      "details": {
+        "Brand": "Arctic",
+        "Model": "Liquid Freezer III 360",
+        "Type": "360mm AIO",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    },
+    {
+      "name": "Thermalright Peerless Assassin 120",
+      "image": "assets/products/cooler/15.jpg",
+      "details": {
+        "Brand": "Thermalright",
+        "Model": "Peerless Assassin 120",
+        "Type": "Air Cooler",
+        "Compatibility": "AM5 / LGA1700"
+      }
+    }
+  ],
+
+  "cabinet": [
+    {
+      "name": "NZXT H5 Flow",
+      "image": "assets/products/cabinet/1.jpg",
+      "details": {
+        "Brand": "NZXT",
+        "Model": "H5 Flow",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX"
+      }
+    },
+    {
+      "name": "NZXT H7 Flow",
+      "image": "assets/products/cabinet/2.jpg",
+      "details": {
+        "Brand": "NZXT",
+        "Model": "H7 Flow",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX"
+      }
+    },
+    {
+      "name": "Corsair 4000D Airflow",
+      "image": "assets/products/cabinet/3.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "4000D Airflow",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Corsair 5000D Airflow",
+      "image": "assets/products/cabinet/4.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "5000D Airflow",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Lian Li Lancool 216",
+      "image": "assets/products/cabinet/5.jpg",
+      "details": {
+        "Brand": "Lian Li",
+        "Model": "Lancool 216",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX"
+      }
+    },
+    {
+      "name": "Lian Li O11 Dynamic",
+      "image": "assets/products/cabinet/6.jpg",
+      "details": {
+        "Brand": "Lian Li",
+        "Model": "O11 Dynamic",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Cooler Master TD500 Mesh",
+      "image": "assets/products/cabinet/7.jpg",
+      "details": {
+        "Brand": "Cooler Master",
+        "Model": "TD500 Mesh",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Cooler Master MasterBox Q300L",
+      "image": "assets/products/cabinet/8.jpg",
+      "details": {
+        "Brand": "Cooler Master",
+        "Model": "MasterBox Q300L",
+        "Form Factor": "Micro Tower",
+        "Motherboard": "Micro-ATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "DeepCool CC560",
+      "image": "assets/products/cabinet/9.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "CC560",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "DeepCool CH560",
+      "image": "assets/products/cabinet/10.jpg",
+      "details": {
+        "Brand": "DeepCool",
+        "Model": "CH560",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Phanteks Eclipse G360A",
+      "image": "assets/products/cabinet/11.jpg",
+      "details": {
+        "Brand": "Phanteks",
+        "Model": "Eclipse G360A",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Fractal Design Pop Air",
+      "image": "assets/products/cabinet/12.jpg",
+      "details": {
+        "Brand": "Fractal Design",
+        "Model": "Pop Air",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "Antec NX410",
+      "image": "assets/products/cabinet/13.jpg",
+      "details": {
+        "Brand": "Antec",
+        "Model": "NX410",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "ASUS TUF Gaming GT501",
+      "image": "assets/products/cabinet/14.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF Gaming GT501",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    },
+    {
+      "name": "MSI MAG Forge 112R",
+      "image": "assets/products/cabinet/15.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "MAG Forge 112R",
+        "Form Factor": "Mid Tower",
+        "Motherboard": "ATX / mATX / Mini-ITX"
+      }
+    }
+  ],
+
+  "monitor": [
+    {
+      "name": "LG 24GN650",
+      "image": "assets/products/monitor/1.jpg",
+      "details": {
+        "Brand": "LG",
+        "Model": "24GN650",
+        "Size": "24 Inch",
+        "Resolution": "1080p",
+        "Refresh Rate": "144Hz"
+      }
+    },
+    {
+      "name": "Acer Nitro VG240Y",
+      "image": "assets/products/monitor/2.jpg",
+      "details": {
+        "Brand": "Acer",
+        "Model": "Nitro VG240Y",
+        "Size": "24 Inch",
+        "Resolution": "1080p",
+        "Refresh Rate": "165Hz"
+      }
+    },
+    {
+      "name": "AOC 24G2",
+      "image": "assets/products/monitor/3.jpg",
+      "details": {
+        "Brand": "AOC",
+        "Model": "24G2",
+        "Size": "24 Inch",
+        "Resolution": "1080p",
+        "Refresh Rate": "144Hz"
+      }
+    },
+    {
+      "name": "MSI G241",
+      "image": "assets/products/monitor/4.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "G241",
+        "Size": "24 Inch",
+        "Resolution": "1080p",
+        "Refresh Rate": "144Hz"
+      }
+    },
+    {
+      "name": "Samsung Odyssey G3",
+      "image": "assets/products/monitor/5.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "Odyssey G3",
+        "Size": "24 Inch",
+        "Resolution": "1080p",
+        "Refresh Rate": "165Hz"
+      }
+    },
+    {
+      "name": "Gigabyte G24F",
+      "image": "assets/products/monitor/6.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "G24F",
+        "Size": "24 Inch",
+        "Resolution": "1080p",
+        "Refresh Rate": "165Hz"
+      }
+    },
+    {
+      "name": "LG 27GN800",
+      "image": "assets/products/monitor/7.jpg",
+      "details": {
+        "Brand": "LG",
+        "Model": "27GN800",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "144Hz"
+      }
+    },
+    {
+      "name": "Acer Nitro XV272U",
+      "image": "assets/products/monitor/8.jpg",
+      "details": {
+        "Brand": "Acer",
+        "Model": "Nitro XV272U",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "170Hz"
+      }
+    },
+    {
+      "name": "MSI G273QF",
+      "image": "assets/products/monitor/9.jpg",
+      "details": {
+        "Brand": "MSI",
+        "Model": "G273QF",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "165Hz"
+      }
+    },
+    {
+      "name": "Gigabyte M27Q",
+      "image": "assets/products/monitor/10.jpg",
+      "details": {
+        "Brand": "Gigabyte",
+        "Model": "M27Q",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "170Hz"
+      }
+    },
+    {
+      "name": "Samsung Odyssey G5",
+      "image": "assets/products/monitor/11.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "Odyssey G5",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "165Hz"
+      }
+    },
+    {
+      "name": "LG UltraGear 32GN600",
+      "image": "assets/products/monitor/12.jpg",
+      "details": {
+        "Brand": "LG",
+        "Model": "32GN600",
+        "Size": "32 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "165Hz"
+      }
+    },
+    {
+      "name": "Samsung Odyssey G7",
+      "image": "assets/products/monitor/13.jpg",
+      "details": {
+        "Brand": "Samsung",
+        "Model": "Odyssey G7",
+        "Size": "32 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "240Hz"
+      }
+    },
+    {
+      "name": "LG UltraGear 27GR95QE",
+      "image": "assets/products/monitor/14.jpg",
+      "details": {
+        "Brand": "LG",
+        "Model": "27GR95QE",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "240Hz"
+      }
+    },
+    {
+      "name": "ASUS ROG Swift PG279QM",
+      "image": "assets/products/monitor/15.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "PG279QM",
+        "Size": "27 Inch",
+        "Resolution": "1440p",
+        "Refresh Rate": "240Hz"
+      }
+    }
+  ],
+
+  "keyboard": [
+    {
+      "name": "Logitech G213",
+      "image": "assets/products/keyboard/1.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G213",
+        "Type": "Membrane",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Logitech G413",
+      "image": "assets/products/keyboard/2.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G413",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Logitech G512",
+      "image": "assets/products/keyboard/3.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G512",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Redragon K552",
+      "image": "assets/products/keyboard/4.jpg",
+      "details": {
+        "Brand": "Redragon",
+        "Model": "K552",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Redragon K617",
+      "image": "assets/products/keyboard/5.jpg",
+      "details": {
+        "Brand": "Redragon",
+        "Model": "K617",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "HyperX Alloy Core",
+      "image": "assets/products/keyboard/6.jpg",
+      "details": {
+        "Brand": "HyperX",
+        "Model": "Alloy Core",
+        "Type": "Membrane",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "HyperX Alloy Origins",
+      "image": "assets/products/keyboard/7.jpg",
+      "details": {
+        "Brand": "HyperX",
+        "Model": "Alloy Origins",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Razer Cynosa V2",
+      "image": "assets/products/keyboard/8.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "Cynosa V2",
+        "Type": "Membrane",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Razer BlackWidow V3",
+      "image": "assets/products/keyboard/9.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "BlackWidow V3",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Razer Huntsman Mini",
+      "image": "assets/products/keyboard/11.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "Huntsman Mini",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Corsair K55 RGB",
+      "image": "assets/products/keyboard/12.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "K55 RGB",
+        "Type": "Membrane",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Corsair K60 Pro",
+      "image": "assets/products/keyboard/13.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "K60 Pro",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "ASUS TUF K3",
+      "image": "assets/products/keyboard/14.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF K3",
+        "Type": "Mechanical",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Keychron K2",
+      "image": "assets/products/keyboard/15.jpg",
+      "details": {
+        "Brand": "Keychron",
+        "Model": "K2",
+        "Type": "Mechanical",
+        "Connection": "Wireless / USB"
+      }
+    },
+    {
+      "name": "SteelSeries Apex 3",
+      "image": "assets/products/keyboard/16.jpg",
+      "details": {
+        "Brand": "SteelSeries",
+        "Model": "Apex 3",
+        "Type": "Membrane",
+        "Connection": "Wired USB"
+      }
+    }
+  ],
+
+  "mouse": [
+    {
+      "name": "Logitech G102",
+      "image": "assets/products/mouse/1.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G102",
+        "DPI": "8000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Logitech G203",
+      "image": "assets/products/mouse/2.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G203",
+        "DPI": "8000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Logitech G502 Hero",
+      "image": "assets/products/mouse/3.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G502 Hero",
+        "DPI": "25600 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Logitech G502 X",
+      "image": "assets/products/mouse/4.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G502 X",
+        "DPI": "25600 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Razer DeathAdder Essential",
+      "image": "assets/products/mouse/5.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "DeathAdder Essential",
+        "DPI": "6400 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Razer DeathAdder V2",
+      "image": "assets/products/mouse/6.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "DeathAdder V2",
+        "DPI": "20000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Razer Basilisk V3",
+      "image": "assets/products/mouse/7.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "Basilisk V3",
+        "DPI": "26000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Redragon M711",
+      "image": "assets/products/mouse/8.jpg",
+      "details": {
+        "Brand": "Redragon",
+        "Model": "M711",
+        "DPI": "10000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Redragon M808",
+      "image": "assets/products/mouse/9.jpg",
+      "details": {
+        "Brand": "Redragon",
+        "Model": "M808",
+        "DPI": "10000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Corsair Katar Pro",
+      "image": "assets/products/mouse/10.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "Katar Pro",
+        "DPI": "10000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "Corsair M65 RGB Elite",
+      "image": "assets/products/mouse/11.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "M65 RGB Elite",
+        "DPI": "18000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "SteelSeries Rival 3",
+      "image": "assets/products/mouse/12.jpg",
+      "details": {
+        "Brand": "SteelSeries",
+        "Model": "Rival 3",
+        "DPI": "8500 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "SteelSeries Rival 5",
+      "image": "assets/products/mouse/13.jpg",
+      "details": {
+        "Brand": "SteelSeries",
+        "Model": "Rival 5",
+        "DPI": "18000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "ASUS TUF M3",
+      "image": "assets/products/mouse/14.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF M3",
+        "DPI": "7000 DPI",
+        "Connection": "Wired USB"
+      }
+    },
+    {
+      "name": "HyperX Pulsefire Haste",
+      "image": "assets/products/mouse/15.jpg",
+      "details": {
+        "Brand": "HyperX",
+        "Model": "Pulsefire Haste",
+        "DPI": "16000 DPI",
+        "Connection": "Wired USB"
+      }
+    }
+  ],
+
+  "headset": [
+    {
+      "name": "HyperX Cloud Stinger 2",
+      "image": "assets/products/headset/1.jpg",
+      "details": {
+        "Brand": "HyperX",
+        "Model": "Cloud Stinger 2",
+        "Type": "Over-Ear",
+        "Connection": "3.5mm Wired"
+      }
+    },
+    {
+      "name": "HyperX Cloud II",
+      "image": "assets/products/headset/2.jpg",
+      "details": {
+        "Brand": "HyperX",
+        "Model": "Cloud II",
+        "Type": "Over-Ear",
+        "Connection": "USB / 3.5mm"
+      }
+    },
+    {
+      "name": "HyperX Cloud III",
+      "image": "assets/products/headset/3.jpg",
+      "details": {
+        "Brand": "HyperX",
+        "Model": "Cloud III",
+        "Type": "Over-Ear",
+        "Connection": "USB / 3.5mm"
+      }
+    },
+    {
+      "name": "Logitech G432",
+      "image": "assets/products/headset/4.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G432",
+        "Type": "Over-Ear",
+        "Connection": "USB / 3.5mm"
+      }
+    },
+    {
+      "name": "Logitech G435",
+      "image": "assets/products/headset/5.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G435",
+        "Type": "Over-Ear",
+        "Connection": "Wireless"
+      }
+    },
+    {
+      "name": "Logitech G733",
+      "image": "assets/products/headset/6.jpg",
+      "details": {
+        "Brand": "Logitech",
+        "Model": "G733",
+        "Type": "Over-Ear",
+        "Connection": "Wireless"
+      }
+    },
+    {
+      "name": "Razer BlackShark V2",
+      "image": "assets/products/headset/7.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "BlackShark V2",
+        "Type": "Over-Ear",
+        "Connection": "3.5mm Wired"
+      }
+    },
+    {
+      "name": "Razer BlackShark V2 Pro",
+      "image": "assets/products/headset/8.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "BlackShark V2 Pro",
+        "Type": "Over-Ear",
+        "Connection": "Wireless"
+      }
+    },
+    {
+      "name": "Razer Kraken X",
+      "image": "assets/products/headset/9.jpg",
+      "details": {
+        "Brand": "Razer",
+        "Model": "Kraken X",
+        "Type": "Over-Ear",
+        "Connection": "3.5mm Wired"
+      }
+    },
+    {
+      "name": "Corsair HS55",
+      "image": "assets/products/headset/10.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "HS55",
+        "Type": "Over-Ear",
+        "Connection": "3.5mm Wired"
+      }
+    },
+    {
+      "name": "Corsair HS80 RGB",
+      "image": "assets/products/headset/11.jpg",
+      "details": {
+        "Brand": "Corsair",
+        "Model": "HS80 RGB",
+        "Type": "Over-Ear",
+        "Connection": "USB / Wireless"
+      }
+    },
+    {
+      "name": "SteelSeries Arctis 3",
+      "image": "assets/products/headset/12.jpg",
+      "details": {
+        "Brand": "SteelSeries",
+        "Model": "Arctis 3",
+        "Type": "Over-Ear",
+        "Connection": "3.5mm Wired"
+      }
+    },
+    {
+      "name": "SteelSeries Arctis Nova 3",
+      "image": "assets/products/headset/13.jpg",
+      "details": {
+        "Brand": "SteelSeries",
+        "Model": "Arctis Nova 3",
+        "Type": "Over-Ear",
+        "Connection": "USB / 3.5mm"
+      }
+    },
+    {
+      "name": "ASUS TUF Gaming H3",
+      "image": "assets/products/headset/14.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "TUF Gaming H3",
+        "Type": "Over-Ear",
+        "Connection": "3.5mm Wired"
+      }
+    },
+    {
+      "name": "ASUS ROG Delta S",
+      "image": "assets/products/headset/15.jpg",
+      "details": {
+        "Brand": "ASUS",
+        "Model": "ROG Delta S",
+        "Type": "Over-Ear",
+        "Connection": "USB-C Wired"
+      }
+    }
+  ]
+}
