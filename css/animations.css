@@ -290,7 +290,7 @@
 .cursor-dot.hover  { width: 14px; height: 14px; background: #80ffdb; }
 .cursor-ring.hover { width: 54px; height: 54px; border-color: #64dfdf; border-width: 2px; }
 /* Hide on touch devices */
-@media (hover: none) { .cursor-dot, .cursor-ring { display: none; } }
+@media (hover: none), (max-width: 768px) { .cursor-dot, .cursor-ring { display: none !important; } }
 
 /* ─── Scroll Progress Bar ─── */
 #scroll-progress {
@@ -495,4 +495,11 @@ html.no-splash #splash-screen { display: none !important; }
   background: linear-gradient(90deg, #64dfdf, #80ffdb);
   animation: progressFill 1.9s cubic-bezier(0.4,0,0.2,1) forwards;
   box-shadow: 0 0 10px rgba(100,223,223,0.5);
+}
+
+
+@media (max-width: 768px) {
+  .anim-from-left { transform: translateX(-15px); }
+  .anim-from-right { transform: translateX(15px); }
+  .booking-section::after { display: none !important; }
 }
